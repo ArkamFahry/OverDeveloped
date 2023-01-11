@@ -2,7 +2,7 @@
 id: j3m5sa59nq3g3ywo1kdwv56
 title: Root
 desc: ''
-updated: 1673421747734
+updated: 1673452282414
 created: 1673421747734
 ---
 # Welcome to Dendron
