@@ -2,10 +2,10 @@
 id: j3m5sa59nq3g3ywo1kdwv56
 title: Root
 desc: ''
-updated: 1673452282414
+updated: 1673452869722
 created: 1673421747734
 ---
-# Welcome to Dendron
+# Welcome to OverDeveloped
 
 This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.
 
