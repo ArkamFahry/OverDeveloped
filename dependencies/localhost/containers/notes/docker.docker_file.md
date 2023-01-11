@@ -2,7 +2,7 @@
 id: 5zoeu3gz1nxlwlvdbbiobqv
 title: Docker_file
 desc: ''
-updated: 1673423404656
+updated: 1673424694797
 created: 1673423404656
 isDir: false
 enableToc: false
@@ -12,11 +12,12 @@ tags:
 title_imported: Docker FIle
 ---
 
- A **docker file** is  a text document that contains all the commands a user could call on the command line to assemble an docker image. Using docker build users can create an automated build that executes the command's described in the **docker file** in succession to create a docker image.    
- 
+ A **docker file** is  a text document that contains all the commands a user could call on the command line to assemble an docker image. Using docker build users can create an automated build that executes the command's described in the **docker file** in succession to create a docker image.
+
 #### Example docker files
 
 - #### A docker file  
+
 ```Docker
 # The base image
 FROM node:lts-alpine3.16
@@ -37,7 +38,9 @@ EXPOSE 3000
 # The command which runs when the docker container starts
 CMD [ "npm", "run", "start" ]
 ```
+
 - #### A multi stage docker file  
+
 ```Docker
 # The base image for the docker image build
 FROM node:lts-alpine3.16 AS builder

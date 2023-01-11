@@ -2,7 +2,7 @@
 id: 5xps6q691bk9c6wqacaq28b
 title: Docker_commands
 desc: ''
-updated: 1673423404655
+updated: 1673424630727
 created: 1673423404655
 isDir: false
 enableToc: false
@@ -15,13 +15,15 @@ title_imported: Docker Commands
 ## Installation
 
 One click installation script:
-```
+
+``` bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
 Run docker as non root user:
-```
+
+``` bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
@@ -29,10 +31,11 @@ sudo usermod -aG docker $USER
 Install Docker Engine : [Docker Engine](https://docs.docker.com/engine/install/)
 
 ---
+
 ## Build Images
 
-
 ---
+
 ## Docker CLI
 
 **Run Containers**
@@ -134,14 +137,19 @@ COMMAND | DESCRIPTION
 `docker volume prune` | Delete all volumes (not referenced by any container)
 
 ### Backup a container
+
 Backup docker data from inside container volumes and package it in a tarball archive.
 `docker run --rm --volumes-from CONTAINER -v $(pwd):/backup busybox tar cvfz /backup/backup.tar CONTAINERPATH`
 
 ### Restore container from backup
+
 Restore the volume with a tarball archive.
 `docker run --rm --volumes-from CONTAINER -v $(pwd):/backup busybox sh -c "cd CONTAINERPATH && tar xvf /backup/backup.tar --strip 1"`
+
 ## Networks
 
 ## Troubleshooting
+
 ### Networking
+
 `docker run --name netshoot --rm -it nicolaka/netshoot /bin/bash`

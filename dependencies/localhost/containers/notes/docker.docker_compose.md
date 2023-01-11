@@ -2,7 +2,7 @@
 id: 362hlmvangnt9zu9esmnll9
 title: Docker_compose
 desc: ''
-updated: 1673423404656
+updated: 1673424673577
 created: 1673423404656
 isDir: false
 enableToc: false
@@ -12,7 +12,7 @@ tags:
 title_imported: Docker Compose
 ---
 
-**Docker compose** is used to run multiple docker containers at once 
+**Docker compose** is used to run multiple docker containers at once
 
 ## Networking
 
@@ -21,6 +21,7 @@ By default Docker-Compose will create a new network for the given compose file. 
 ### Create and assign custom network
 
 *Example:*
+
 ```yaml
 networks:
   custom-network:
@@ -30,9 +31,12 @@ services:
     networks:
       - custom-network
 ```
+
 ### Use existing networks
+
 If you want to use an existing Docker network for your compose files, you can add the `external: true` parameter in your compose file
 *Example:*
+
 ```yaml
 networks:
   existing-network:
@@ -42,6 +46,7 @@ networks:
 ## Volumes
 
 Volumes allow Docker containers to use persistent storage. In a compose file, you can create and map volumes like this:
+
 ```yaml
 volumes:
   my-volume:
