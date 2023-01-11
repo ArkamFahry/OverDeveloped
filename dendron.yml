@@ -95,7 +95,7 @@ publishing:
     - root
   writeStubs: false
   siteRootDir: docs
-  siteUrl: arkamfahry.github.io/overdeveloped
+  siteUrl: arkamfahry.github.io/OverDeveloped/
   seo:
     title: OverDeveloped
     description: Personal Knowledge Base
