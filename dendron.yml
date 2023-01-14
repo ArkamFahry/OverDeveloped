@@ -92,6 +92,7 @@ publishing:
   enableKatex: true
   copyAssets: true
   siteHierarchies:
+    - OverDeveloped
     - root
   writeStubs: false
   siteRootDir: docs
