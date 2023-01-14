@@ -96,7 +96,7 @@ publishing:
   writeStubs: false
   siteRootDir: docs
   siteUrl: arkamfahry.github.io
-  assetsPrefix: /
+  assetsPrefix: /OverDeveloped
   seo:
     title: OverDeveloped
     description: Personal Knowledge Base
