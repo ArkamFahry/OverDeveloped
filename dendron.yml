@@ -95,7 +95,7 @@ publishing:
     - root
   writeStubs: false
   siteRootDir: docs
-  siteIndex: /
+  siteIndex: OverDeveloped
   siteUrl: https://{GITHUB_USERNAME}.github.io
   assetsPrefix: /OverDeveloped
   seo:
