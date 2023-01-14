@@ -96,6 +96,7 @@ publishing:
   writeStubs: false
   siteRootDir: docs
   siteUrl: https://{GITHUB_USERNAME}.github.io
+  assetsPrefix: /OverDeveloped
   seo:
     title: OverDeveloped
     description: Personal Knowledge Base
