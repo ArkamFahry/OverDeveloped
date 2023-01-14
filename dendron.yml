@@ -97,7 +97,7 @@ publishing:
   writeStubs: false
   siteRootDir: docs
   siteIndex: OverDeveloped
-  siteUrl: https://{GITHUB_USERNAME}.github.io
+  siteUrl: https://arkamfahry.github.io
   assetsPrefix: /OverDeveloped
   seo:
     title: OverDeveloped
