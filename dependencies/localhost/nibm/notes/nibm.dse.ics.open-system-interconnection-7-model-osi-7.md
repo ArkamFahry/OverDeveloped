@@ -1,15 +1,9 @@
 ---
 id: qvfwwimu7ulrprj7q2bizpa
-title: Open System Interconnection 7 Model (Osi 7)
+title: Open System Interconnection 7 Model Osi 7
 desc: ''
-updated: 1673421974010
+updated: 1673712531215
 created: 1673421974010
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Open System Interconnection 7 Model (OSI 7)
 ---
 
  ## The 7 layers of the open system interconnection (OSI) Model are

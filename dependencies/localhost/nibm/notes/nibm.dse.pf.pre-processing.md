@@ -2,14 +2,8 @@
 id: 6l61r3qj9elbbovt6f1m88e
 title: Pre Processing
 desc: ''
-updated: 1673421974016
+updated: 1673713139227
 created: 1673421974016
-tags:
-  - PF
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Pre Processing
 ---
 
 

@@ -2,14 +2,8 @@
 id: 362hlmvangnt9zu9esmnll9
 title: Docker Compose
 desc: ''
-updated: 1673424673577
+updated: 1673709314178
 created: 1673423404656
-tags:
-  - docker
-  - containers
-isDir: false
-enableToc: false
-title_imported: Docker Compose
 ---
 
 **Docker compose** is used to run multiple docker containers at once

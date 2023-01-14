@@ -2,14 +2,8 @@
 id: lwm21ynm202hkv1bbt0jsoa
 title: Images
 desc: ''
-updated: 1673421974006
+updated: 1673712291761
 created: 1673421974006
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: Images
 ---
 
 Images

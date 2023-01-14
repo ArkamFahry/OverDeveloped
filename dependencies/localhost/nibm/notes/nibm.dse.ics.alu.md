@@ -2,14 +2,8 @@
 id: ocqg1nwy9aehhxjtrs39kyb
 title: Alu
 desc: ''
-updated: 1673421974003
+updated: 1673709556924
 created: 1673421974003
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: ALU
 ---
 
 ALU

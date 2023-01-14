@@ -2,14 +2,8 @@
 id: fjc56a6uqum1jf8y7330vxs
 title: Types of Ip Address
 desc: ''
-updated: 1673421974012
+updated: 1673712775911
 created: 1673421974012
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Types of IP Address
 ---
 
  

@@ -2,14 +2,8 @@
 id: frdqj80muxw6bw3t6w3msqe
 title: What Is Computer Science
 desc: ''
-updated: 1673421974013
+updated: 1673712879569
 created: 1673421974013
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is Computer Science
 ---
 
 What is Computer Science

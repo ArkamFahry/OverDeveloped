@@ -2,14 +2,8 @@
 id: 80iw325s4obovq2bgs6kory
 title: What Is a Computer Network
 desc: ''
-updated: 1673421974013
+updated: 1673712862135
 created: 1673421974013
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is a Computer
 ---
 
 What is a computer network

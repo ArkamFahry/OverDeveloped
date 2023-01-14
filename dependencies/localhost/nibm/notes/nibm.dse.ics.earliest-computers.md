@@ -2,14 +2,8 @@
 id: bozhrf2ph27urkxwnw3n1uo
 title: Earliest Computers
 desc: ''
-updated: 1673421974005
+updated: 1673712130129
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Earliest Computers
 ---
 
 Earliest Computers

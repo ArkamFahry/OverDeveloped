@@ -2,14 +2,8 @@
 id: l35t8yaki3u2y62vgq1ekng
 title: Upcoming It Industries in Sri Lanka
 desc: ''
-updated: 1673421974012
+updated: 1673712808715
 created: 1673421974012
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Upcoming IT Industries in Sri Lanka
 ---
 
 Upcoming I.T industries in Sri Lanka

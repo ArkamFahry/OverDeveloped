@@ -2,14 +2,8 @@
 id: 02zu2j6q28vrim53jndet43
 title: Cost of Networking
 desc: ''
-updated: 1673421974005
+updated: 1673711967875
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Cost of Networking
 ---
  
 

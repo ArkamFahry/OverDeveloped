@@ -2,14 +2,8 @@
 id: rkvf3upax8idquqorn8be4o
 title: What Is Multimedia
 desc: ''
-updated: 1673421974013
+updated: 1673712896467
 created: 1673421974013
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is Multimedia
 ---
 
 What is multimedia

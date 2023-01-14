@@ -2,14 +2,8 @@
 id: jtk7a0xdgxphvxn7gml47uu
 title: Application Software
 desc: ''
-updated: 1673421974003
+updated: 1673709841141
 created: 1673421974003
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Application Software
 ---
 
 Application software

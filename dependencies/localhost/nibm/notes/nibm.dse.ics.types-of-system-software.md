@@ -2,14 +2,8 @@
 id: 2hlnmw47g8vrv5523oo9ily
 title: Types of System Software
 desc: ''
-updated: 1673421974012
+updated: 1673712802283
 created: 1673421974012
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Types of Systems Software
 ---
 
 Types of system software

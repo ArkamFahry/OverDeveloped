@@ -1,15 +1,9 @@
 ---
 id: zezbux91pvw6oqizj84fydq
-title: Metropolitan Area Network (Man)
+title: Metropolitan Area Network Man
 desc: ''
-updated: 1673421974008
+updated: 1673712423341
 created: 1673421974008
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Metropolitan Area Network (MAN)
 ---
  
 

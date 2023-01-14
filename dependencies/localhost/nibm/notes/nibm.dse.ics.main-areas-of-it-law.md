@@ -2,14 +2,8 @@
 id: xpaxaqmd7p4r2akwoe21nwz
 title: Main Areas of It Law
 desc: ''
-updated: 1673421974007
+updated: 1673712370828
 created: 1673421974007
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Main Areas of IT Law
 ---
 
 Main Areas Of IT Law

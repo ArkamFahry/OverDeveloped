@@ -2,14 +2,8 @@
 id: w7bpmtu4my5ioemuy3ti8de
 title: Driver Software
 desc: ''
-updated: 1673421974005
+updated: 1673712106299
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Driver Software
 ---
 
 Driver software

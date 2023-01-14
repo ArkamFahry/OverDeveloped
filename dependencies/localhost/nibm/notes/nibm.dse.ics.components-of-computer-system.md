@@ -2,14 +2,8 @@
 id: sud39ilu8ydpbwdn66hfagg
 title: Components of Computer System
 desc: ''
-updated: 1673421974004
+updated: 1673710036839
 created: 1673421974004
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Components of A Computer System
 ---
 
 Components Of Computer System

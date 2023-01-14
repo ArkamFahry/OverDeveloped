@@ -1,15 +1,9 @@
 ---
 id: ls5p98vkfv2prd0fa4wgch6
-title: Internet Protocol Version 6 (Ipv 6)
+title: Internet Protocol Version 6 Ipv 6
 desc: ''
-updated: 1673421974003
+updated: 1673712327259
 created: 1673421974003
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Internet Protocol Version 6 (IPV 6)
 ---
 
  

@@ -2,14 +2,8 @@
 id: w5qa5l4qixu71kb55ze5klu
 title: Programming Software
 desc: ''
-updated: 1673421974010
+updated: 1673712671959
 created: 1673421974010
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Programing Software
 ---
 
 Programming software

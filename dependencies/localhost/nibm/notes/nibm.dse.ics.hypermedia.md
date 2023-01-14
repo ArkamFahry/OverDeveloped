@@ -2,14 +2,8 @@
 id: t6vp0b4j1ggqr2e86h80hmx
 title: Hypermedia
 desc: ''
-updated: 1673421974006
+updated: 1673712276348
 created: 1673421974006
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: Hypermedia
 ---
 
 

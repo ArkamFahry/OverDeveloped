@@ -2,14 +2,8 @@
 id: lgidy1kce1czhiknxr8sm05
 title: Photoshop Shortcuts
 desc: ''
-updated: 1673421974010
+updated: 1673712584683
 created: 1673421974010
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Photoshop Shortcuts
 ---
 
 Photoshop shortcuts

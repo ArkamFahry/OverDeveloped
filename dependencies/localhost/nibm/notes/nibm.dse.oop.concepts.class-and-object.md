@@ -2,14 +2,8 @@
 id: l97vqi680xvk9s9xo65an7i
 title: Class and Object
 desc: ''
-updated: 1673421974016
+updated: 1673713027109
 created: 1673421974016
-tags:
-  - OOP
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Class and Object
 ---
 
 ### Class

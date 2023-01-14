@@ -2,14 +2,8 @@
 id: 80bivrko73s0qr238o2mcpm
 title: Applications of Multimedia
 desc: ''
-updated: 1673421974003
+updated: 1673709848312
 created: 1673421974003
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Aplications of Multimedia
 ---
 
 Applications of multimedia

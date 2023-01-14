@@ -2,14 +2,8 @@
 id: 3b8ggj38ewf94q23z7jj38g
 title: It Related Legislations in Sri Lanka
 desc: ''
-updated: 1673421974003
+updated: 1673712342262
 created: 1673421974003
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: IT Related Legislations in Sri Lanka
 ---
 
 IT Related Legislations In Sri Lanka

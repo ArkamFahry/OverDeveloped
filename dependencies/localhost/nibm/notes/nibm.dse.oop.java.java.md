@@ -2,19 +2,9 @@
 id: jnv4xlcdfy96sf83qpaf4gp
 title: Java
 desc: ''
-updated: 1673421974016
+updated: 1673713063795
 created: 1673421974016
-isDir: false
 ---
-
----
-title: Java
-enableToc: false
-tags:
-- OOP
-- NIBM
----
-
 #### Install Java JDK
 
 - Side note need an oracle account

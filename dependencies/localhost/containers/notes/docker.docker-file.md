@@ -2,14 +2,8 @@
 id: 5zoeu3gz1nxlwlvdbbiobqv
 title: Docker File
 desc: ''
-updated: 1673424694797
+updated: 1673709300149
 created: 1673423404656
-tags:
-  - docker
-  - containers
-isDir: false
-enableToc: false
-title_imported: Docker FIle
 ---
 
  A **docker file** is  a text document that contains all the commands a user could call on the command line to assemble an docker image. Using docker build users can create an automated build that executes the command's described in the **docker file** in succession to create a docker image.

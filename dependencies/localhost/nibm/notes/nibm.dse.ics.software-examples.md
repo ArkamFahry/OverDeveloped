@@ -2,14 +2,8 @@
 id: 8ogsldkcwsuk8f14d3s96y3
 title: Software Examples
 desc: ''
-updated: 1673421974011
+updated: 1673712691156
 created: 1673421974011
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Software Examples
 ---
 
 Software examples

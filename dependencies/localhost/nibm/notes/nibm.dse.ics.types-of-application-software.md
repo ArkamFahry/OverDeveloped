@@ -2,14 +2,8 @@
 id: 8lwuov91u4563p3dkv680ya
 title: Types of Application Software
 desc: ''
-updated: 1673421974012
+updated: 1673712770333
 created: 1673421974012
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Types of Application Software
 ---
 
 Types of application software

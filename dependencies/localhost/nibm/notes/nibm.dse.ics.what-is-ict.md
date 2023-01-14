@@ -2,14 +2,8 @@
 id: my5ujm4d41ng1xx1lvwb52m
 title: What Is Ict
 desc: ''
-updated: 1673421974013
+updated: 1673712890599
 created: 1673421974013
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is ICT
 ---
 
 What Is ICT

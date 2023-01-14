@@ -2,14 +2,8 @@
 id: w5q46h1bvqnb2f5zmcd6a3h
 title: Half Mesh Topology
 desc: ''
-updated: 1673421974005
+updated: 1673712203833
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Half Mesh Topology
 ---
 
 

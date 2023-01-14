@@ -2,14 +2,8 @@
 id: n7ahohyabk6lb9h24myo7qp
 title: Assembler
 desc: ''
-updated: 1673421974015
+updated: 1673713084402
 created: 1673421974015
-isDir: false
-enableToc: false
-tags:
-  - PF
-  - NIBM
-title_imported: Assembler
 ---
 
 - An assembler is a program that takes basic computer instructions and converts them into a pattern of bits that the computer's processor can use to perform its basic operations

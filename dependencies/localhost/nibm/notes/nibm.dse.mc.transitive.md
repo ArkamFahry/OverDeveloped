@@ -2,14 +2,8 @@
 id: y21deii7r4epd0cpscjnekq
 title: Transitive
 desc: ''
-updated: 1673421974014
+updated: 1673712981568
 created: 1673421974014
-isDir: false
-enableToc: false
-tags:
-  - MC
-  - NIBM
-title_imported: Transitive
 ---
 
 Transitive

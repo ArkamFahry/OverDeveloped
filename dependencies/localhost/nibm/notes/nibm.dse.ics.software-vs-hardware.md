@@ -2,14 +2,8 @@
 id: 38w7wfjnvtzwdknhtsr9xvi
 title: Software Vs Hardware
 desc: ''
-updated: 1673421974011
+updated: 1673712697183
 created: 1673421974011
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Software Vs Hardware
 ---
 
 Software vs Hardware

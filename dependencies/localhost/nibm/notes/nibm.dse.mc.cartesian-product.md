@@ -2,14 +2,8 @@
 id: mr7vw7xzanl9b1jnjyhpdzv
 title: Cartesian Product
 desc: ''
-updated: 1673421974014
+updated: 1673712934241
 created: 1673421974014
-tags:
-  - MC
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Cartesian Product
 ---
 
 Cartesian product

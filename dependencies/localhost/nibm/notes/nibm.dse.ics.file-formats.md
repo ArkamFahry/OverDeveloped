@@ -2,14 +2,8 @@
 id: fioeci5rkx94f9iqwm92tib
 title: File Formats
 desc: ''
-updated: 1673421974005
+updated: 1673712169307
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: File Formats
 ---
 
 File formats

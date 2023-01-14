@@ -2,14 +2,8 @@
 id: awxx3cehszyb4datrqlycg2
 title: Docker
 desc: ''
-updated: 1673424733632
+updated: 1673709286075
 created: 1673423404653
-isDir: false
-enableToc: false
-tags:
-  - docker
-  - containers
-title_imported: Docker
 ---
 
 **Docker** is a set of platform as a service (PaaS) products which uses OS-level virtualization to deliver software in a _container_ . A container is light weight isolated virtual environment which runs reliably in any environment which has a docker engine.

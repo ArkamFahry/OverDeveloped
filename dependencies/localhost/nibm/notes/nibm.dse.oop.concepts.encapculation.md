@@ -2,14 +2,8 @@
 id: btb1mwg1wkpc43kvnbyi0gy
 title: Encapculation
 desc: ''
-updated: 1673421974016
+updated: 1673713034581
 created: 1673421974016
-isDir: false
-enableToc: false
-tags:
-  - OOP
-  - NIBM
-title_imported: Encapsulation
 ---
 
 - Encapsulation is the process of combining Attributes and Methods in to single unit.

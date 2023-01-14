@@ -2,14 +2,8 @@
 id: 341oc3jy7cq3hsca1541ger
 title: Computer Hacking
 desc: ''
-updated: 1673421974005
+updated: 1673710323962
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Computer Hacking
 ---
 
 
@@ -41,7 +35,7 @@ Computer Hacking
     -   Viruses or Trojans are malicious software programs that get installed into the victim's system and keep sending the victim's data to the hacker. They can also lock your files, serve fraud advertisement, divert traffic, sniff your data, or spread on all the computers connected to your network.
 
 
-4.  Phishing
+1.  Phishing
 
     -   Phishing is a hacking technique using which a hacker replicates the most-accessed sites and traps the victim by sending that spoofed link. Combined with social engineering, it becomes one of the most commonly used and deadliest attack vectors.
 

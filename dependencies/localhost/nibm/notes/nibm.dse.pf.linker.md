@@ -2,14 +2,8 @@
 id: f8bxxdq5dnea10jv15m3j0s
 title: Linker
 desc: ''
-updated: 1673421974016
+updated: 1673713130744
 created: 1673421974016
-isDir: false
-enableToc: false
-tags:
-  - PF
-  - NIBM
-title_imported: Linker
 ---
 
 ## Linker

@@ -2,14 +2,18 @@
 id: i2mmyk5veldq4p5n0hcl08e
 title: OverDeveloped
 desc: 'Home Page'
-updated: 1673706097354
+updated: 1673712653768
 created: 1673703656990
 ---
 # 💫About OverDeveloped:
-🧠This is my second brain (buzz word knowledge base)<br>🫠 My real brain is a 😴  if I had one 🤖<br>💫 This is a 🔥🔥🔥 fast knowledge base built on dendron<br>
+🧠 This is my second brain (buzz word knowledge base) <br> 
+🫠 My real brain is a 😴  if I had one 🤖 <br> 
+💫 This is a 🔥🔥🔥 fast knowledge base built on dendron<br>
 
 # 🫠 About Me:
-🔭 I’m arkam fahry an amateur developer<br>❤️I love everything development<br>⚡ Fun fact I like to spend hours I the internet researching on new dev tools<br>
+🔭 I’m arkam fahry an amateur developer <br> 
+❤️ I love everything development <br> 
+⚡ Fun fact I like to spend hours I the internet researching on new dev tools<br>
 
 
 # 💻 What I Will Be Talking About:

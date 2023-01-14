@@ -2,14 +2,8 @@
 id: lqoeeg2md8rr4ry6jpkl535
 title: Multimedia Application
 desc: ''
-updated: 1673421974008
+updated: 1673712448557
 created: 1673421974008
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Multimedia Application
 ---
 
 Multimedia Application

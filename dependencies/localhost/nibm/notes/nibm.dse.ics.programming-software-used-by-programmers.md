@@ -2,14 +2,8 @@
 id: oymrs4wj9h9mj70yjvcrwmm
 title: Programming Software Used by Programmers
 desc: ''
-updated: 1673421974010
+updated: 1673712663914
 created: 1673421974010
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Programing Software Used by Programmers
 ---
 
 Programming software used by programmers

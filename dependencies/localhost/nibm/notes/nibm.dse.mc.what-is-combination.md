@@ -2,14 +2,8 @@
 id: 297ic3zjtlystvkahfshkg6
 title: What Is Combination
 desc: ''
-updated: 1673421974015
+updated: 1673712993926
 created: 1673421974015
-tags:
-  - MC
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is Combination
 ---
 
 What is combination

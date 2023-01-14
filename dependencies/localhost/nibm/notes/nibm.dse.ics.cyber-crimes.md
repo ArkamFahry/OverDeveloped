@@ -2,14 +2,8 @@
 id: yq256oofgenyqh64zhhx3tj
 title: Cyber Crimes
 desc: ''
-updated: 1673421974005
+updated: 1673712095764
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Cyber Crimes
 ---
 
 

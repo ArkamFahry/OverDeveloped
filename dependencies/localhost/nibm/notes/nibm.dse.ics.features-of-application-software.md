@@ -2,14 +2,8 @@
 id: t4rhs3mwx38jpd7y5w8glx4
 title: Features of Application Software
 desc: ''
-updated: 1673421974005
+updated: 1673712140874
 created: 1673421974005
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Features of Application Software
 ---
 
 Features of Application Software

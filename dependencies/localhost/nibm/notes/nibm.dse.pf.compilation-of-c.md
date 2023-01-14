@@ -2,14 +2,8 @@
 id: 88gxc2kjt79k653fd6bl6bo
 title: Compilation of C
 desc: ''
-updated: 1673421974015
+updated: 1673713089994
 created: 1673421974015
-tags:
-  - PF
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Compilation of C
 ---
 
 Compilation of C

@@ -1,15 +1,9 @@
 ---
 id: n9oc99u5xoylc6jwunjkmqw
-title: Types of Operating Systems (Os)
+title: Types of Operating Systems Os
 desc: ''
-updated: 1673421974012
+updated: 1673712796311
 created: 1673421974012
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Types of Operating Systems (OS)
 ---
 
 Types of OS

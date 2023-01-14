@@ -2,14 +2,8 @@
 id: uzd0emg90zt4z3g4hhllhhc
 title: Bios
 desc: ''
-updated: 1673421974004
+updated: 1673709896600
 created: 1673421974004
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: BIOS
 ---
 
 BIOS

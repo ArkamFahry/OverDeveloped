@@ -2,14 +2,8 @@
 id: a1ffgqfzpxl7gvmhweojhd5
 title: Hypertext
 desc: ''
-updated: 1673421974006
+updated: 1673712283104
 created: 1673421974006
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: Hypertext
 ---
 
 Hypertext

@@ -2,14 +2,8 @@
 id: s9qa639gj7llssxzoyh1up2
 title: Cat Cables
 desc: ''
-updated: 1673421974002
+updated: 1673709923723
 created: 1673421974002
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: CAT cables
 ---
  
 

@@ -2,14 +2,8 @@
 id: pb76kttm6f97ddkrkrf10lv
 title: Twisted Pair Cables
 desc: ''
-updated: 1673421974011
+updated: 1673712761364
 created: 1673421974011
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Twisted Pair Cables
 ---
 
  

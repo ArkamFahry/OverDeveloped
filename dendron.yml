@@ -86,6 +86,8 @@ preview:
   enableKatex: true
   automaticallyShowPreview: false
 publishing:
+  giscus:
+    theme: dark_high_contrast
   enableFMTitle: true
   enableNoteTitleForLink: true
   enablePrettyRefs: true

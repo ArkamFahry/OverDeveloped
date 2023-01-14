@@ -2,14 +2,8 @@
 id: kcym683nwucwltc315702et
 title: Symmetric
 desc: ''
-updated: 1673421974014
+updated: 1673712974911
 created: 1673421974014
-isDir: false
-enableToc: false
-tags:
-  - MC
-  - NIBM
-title_imported: Reflexive
 ---
 
 Symmetric

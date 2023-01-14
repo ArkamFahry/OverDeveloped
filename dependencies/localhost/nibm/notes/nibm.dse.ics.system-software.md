@@ -2,14 +2,8 @@
 id: k98lepg87qbso8iddc6rq5e
 title: System Software
 desc: ''
-updated: 1673421974011
+updated: 1673712724261
 created: 1673421974011
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Software Software
 ---
 
 System software

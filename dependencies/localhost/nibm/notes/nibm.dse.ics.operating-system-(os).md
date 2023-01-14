@@ -2,14 +2,8 @@
 id: uzkywywpkpvbsj19ji3t356
 title: Operating System (Os)
 desc: ''
-updated: 1673421974010
+updated: 1673712538646
 created: 1673421974010
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Operating System (OS)
 ---
 
 

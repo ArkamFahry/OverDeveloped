@@ -2,14 +2,8 @@
 id: dzfsv4sakk6t02tz21cxzbg
 title: Star Topology
 desc: ''
-updated: 1673421974011
+updated: 1673712702876
 created: 1673421974011
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Star Topology
 ---
 
 

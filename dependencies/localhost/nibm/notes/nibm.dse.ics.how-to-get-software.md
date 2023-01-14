@@ -2,14 +2,8 @@
 id: mx29huita72hoeekzp43qiu
 title: How to Get Software
 desc: ''
-updated: 1673421974006
+updated: 1673712238748
 created: 1673421974006
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: How to Get Software
 ---
 
 How to get software

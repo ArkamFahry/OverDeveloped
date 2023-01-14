@@ -2,14 +2,8 @@
 id: oz0c632jbxssiipit50gvau
 title: Network Definition
 desc: ''
-updated: 1673421974008
+updated: 1673712473745
 created: 1673421974008
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Network Definition
 ---
 
  

@@ -2,14 +2,8 @@
 id: 5xps6q691bk9c6wqacaq28b
 title: Docker commands
 desc: ''
-updated: 1673698562966
+updated: 1673709337319
 created: 1673423404655
-isDir: false
-enableToc: false
-tags:
-  - docker
-  - containers
-title_imported: Docker Commands
 ---
 
 ## Installation

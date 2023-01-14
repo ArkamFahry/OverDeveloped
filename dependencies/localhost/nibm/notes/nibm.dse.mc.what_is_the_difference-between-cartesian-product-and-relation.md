@@ -2,14 +2,8 @@
 id: wdgio5vu4r0rz0m080bz6c0
 title: What_is_the_difference between Cartesian Product and Relation
 desc: ''
-updated: 1673421974015
+updated: 1673712987992
 created: 1673421974015
-tags:
-  - MC
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is the difference between Cartesian Product and Relation
 ---
 
 

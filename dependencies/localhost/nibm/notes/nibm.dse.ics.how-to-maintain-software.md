@@ -2,14 +2,8 @@
 id: vtteuahju7wzsm0gyj6gvvc
 title: How to Maintain Software
 desc: ''
-updated: 1673421974006
+updated: 1673712245982
 created: 1673421974006
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: How to Maintain Software
 ---
 
 How to maintain software

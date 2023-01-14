@@ -2,14 +2,8 @@
 id: 41oxy211b4ve35sgr2j174q
 title: Computer Generations
 desc: ''
-updated: 1673421974004
+updated: 1673710052894
 created: 1673421974004
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Computer Generations
 ---
 
 

@@ -2,14 +2,8 @@
 id: 5t0ybl0vzug9b0ipodorlh9
 title: Function Math
 desc: ''
-updated: 1673421974014
+updated: 1673712948608
 created: 1673421974014
-tags:
-  - MC
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Function
 ---
 
 Function

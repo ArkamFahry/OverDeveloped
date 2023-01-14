@@ -2,14 +2,8 @@
 id: 5x231lry2fec59ejta2il5x
 title: What Is Permutation
 desc: ''
-updated: 1673421974015
+updated: 1673713006341
 created: 1673421974015
-tags:
-  - MC
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is Permutation
 ---
 
 What is permutation

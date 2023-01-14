@@ -2,14 +2,8 @@
 id: oxa4ajm74ihfrbercdj7uvm
 title: Multimedia Use Cases
 desc: ''
-updated: 1673421974008
+updated: 1673712461912
 created: 1673421974008
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Multimedia Use Cases
 ---
 
 Multimedia used in

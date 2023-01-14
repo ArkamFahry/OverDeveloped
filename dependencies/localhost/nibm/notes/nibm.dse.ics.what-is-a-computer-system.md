@@ -2,14 +2,8 @@
 id: ntkh43w7a66tr6rirdd0x7u
 title: What Is a Computer System
 desc: ''
-updated: 1673421974013
+updated: 1673712873412
 created: 1673421974013
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: What is a Computer System
 ---
 
 What Is Computer System

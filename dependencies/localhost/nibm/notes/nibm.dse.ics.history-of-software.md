@@ -2,14 +2,8 @@
 id: 176kpfkoksquwohmde8vi3a
 title: History of Software
 desc: ''
-updated: 1673421974006
+updated: 1673712231326
 created: 1673421974006
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: History of Software
 ---
 
 History of software

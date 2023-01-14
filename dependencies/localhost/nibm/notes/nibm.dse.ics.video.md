@@ -2,14 +2,8 @@
 id: e7vdv197mpc1upqsjpyqmhe
 title: Video
 desc: ''
-updated: 1673421974012
+updated: 1673712840815
 created: 1673421974012
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: Video
 ---
 
 Video

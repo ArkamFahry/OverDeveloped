@@ -2,14 +2,8 @@
 id: 5vkhfauxgllgm2i36v49xa1
 title: Classes of Transmission Media
 desc: ''
-updated: 1673421974004
+updated: 1673710020244
 created: 1673421974004
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Classe of Transmission Media
 ---
 
 -   Guided (wired)

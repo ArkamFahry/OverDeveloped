@@ -2,14 +2,8 @@
 id: fblce9ep5vru5oe1l95ast2
 title: Coaxial Cables
 desc: ''
-updated: 1673421974004
+updated: 1673710026015
 created: 1673421974004
-tags:
-  - ICS
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Coaxial Cables
 ---
  
 

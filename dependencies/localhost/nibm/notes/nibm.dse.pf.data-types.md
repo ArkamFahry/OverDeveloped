@@ -2,14 +2,8 @@
 id: x7ryuyf51k6xwww658rixte
 title: Data Types
 desc: ''
-updated: 1673421974016
+updated: 1673713102558
 created: 1673421974016
-tags:
-  - PF
-  - NIBM
-isDir: false
-enableToc: false
-title_imported: Data Types and Sizes
 ---
 
 ## Data type and sizes in bytes

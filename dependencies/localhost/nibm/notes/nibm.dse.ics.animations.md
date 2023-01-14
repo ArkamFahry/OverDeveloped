@@ -2,14 +2,8 @@
 id: 1ex4prx8aglu3av8mc0hewt
 title: Animations
 desc: ''
-updated: 1673421974003
+updated: 1673709589904
 created: 1673421974003
-isDir: false
-enableToc: false
-tags:
-  - ICS
-  - NIBM
-title_imported: Animations
 ---
 
 Animations
