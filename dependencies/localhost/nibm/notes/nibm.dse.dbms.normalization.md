@@ -2,18 +2,16 @@
 id: pajhgmda120khu4vi6eumgh
 title: Normalization
 desc: ''
-updated: 1673711078119
+updated: 1673757070915
 created: 1673708144802
 ---
-## What the hell is normalization
+## What is normalization
 
-- Simply put data normalization is the process of eliminating data redundancy and enhance data integrity in the table.
-- Normalization also helps to organize the data in the database
-- Normalization multi-step process that sets the data into tabular form and removes the duplicated data from the relational tables
+Simply put data Normalization is the process of minimizing redundancy from a relation or set of relations.
 
 ## There are 4 steps in database in data normalization
 
-- First Normal Form - 1NF
+- [[First Normal Form - 1NF|nibm.dse.dbms.normalization.first-normal-form-1nf.md]]
 - Second Normal Form -  2NF
 - Third Normal Form - 3NF
 - Boyce Codd Normal Form (Fourth Normal Form) - 4NF
