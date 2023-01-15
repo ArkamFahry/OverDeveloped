@@ -1,6 +1,10 @@
 {
     "folders": [
         {
+            "path": "dependencies/localhost/private/notes",
+            "name": "private"
+        },
+        {
             "path": "dependencies/localhost/containers/notes",
             "name": "containers"
         },

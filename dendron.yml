@@ -22,6 +22,9 @@ commands:
   templateHierarchy: template
 workspace:
   vaults:
+    - fsPath: dependencies/localhost/private
+      selfContained: true
+      name: private
     - fsPath: dependencies/localhost/containers
       selfContained: true
       name: containers
@@ -86,21 +89,17 @@ preview:
   enableKatex: true
   automaticallyShowPreview: false
 publishing:
-  giscus:
-    theme: dark_high_contrast
   enableFMTitle: true
   enableNoteTitleForLink: true
   enablePrettyRefs: true
   enableKatex: true
   copyAssets: true
   siteHierarchies:
-    - root
     - OverDeveloped
+    - nibm
+    - docker
   writeStubs: false
   siteRootDir: docs
-  siteIndex: OverDeveloped
-  siteUrl: https://arkamfahry.github.io
-  assetsPrefix: /OverDeveloped
   seo:
     title: OverDeveloped
     description: Personal Knowledge Base
@@ -116,9 +115,15 @@ publishing:
   enableTaskNotes: true
   enablePrettyLinks: true
   searchMode: search
+  giscus:
+    theme: dark
+  siteIndex: OverDeveloped
+  siteUrl: https://arkamfahry.github.io
+  assetsPrefix: /OverDeveloped
   duplicateNoteBehavior:
     action: useVault
     payload:
       - nibm
       - main
       - containers
+      - private
