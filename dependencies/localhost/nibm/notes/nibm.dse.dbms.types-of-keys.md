@@ -2,7 +2,7 @@
 id: 808ldgljkgypg0vym3xmkaw
 title: Types of Keys
 desc: ''
-updated: 1673778611044
+updated: 1673779216803
 created: 1673774773938
 ---
 
@@ -91,3 +91,16 @@ Ex: In the relation User User_Role is a foreign key reference to the Role relati
 
 - ## Composite Key
 
+Is Sometime scenarios, a table might not have a single column/attribute that uniquely identifies all the records of a table. In order to uniquely identify rows of a table, combination of two or more columns/attributes can be used.
+
+Ex: User relation can have a composite key of User_Full_Name + Phone_Number bot values combined can identify and access a user
+
+>⚠️ Note
+>
+> It still can give duplicate values in rare cases. So , we need to find the optimal set of attributes that can uniquely identify rows in a table
+
+>ℹ️ Info
+>
+>- It acts as a primary key if there is no primary key in a table
+>- Two or more attributes are used to together to make a composite key.
+>- Different combinations of attributes may give different accuracy in terms of identifying the rows uniquely.

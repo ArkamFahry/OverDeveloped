@@ -2,7 +2,7 @@
 id: oytfugiem36ijtzcl1vf23p
 title: '1'
 desc: ''
-updated: 1673776254031
+updated: 1673779385260
 created: 1673772717034
 ---
 
@@ -28,4 +28,4 @@ II. The minimal set of attributes that can uniquely identify a tuple is known as
 
 - Ex: A student has Enrollment ID, NIC and Email all these values are unique and can be used by them selves to identify the tuple in student relation uniquely
 
-III. 
+III.
