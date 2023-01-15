@@ -2,7 +2,7 @@
 id: yy2wmuifbidt7x1ne05lyzx
 title: First Normal Form 1nf
 desc: ''
-updated: 1673758813273
+updated: 1673784272035
 created: 1673711892787
 ---
 
@@ -103,7 +103,7 @@ above table [[composite value attribute|nibm.dse.dbms.types-of-attributes#Compos
 Student_Full_Name Table
 
 |ID|Given_Name|Middle_Name|Family_Name|
-|---|---|---|---|---|
+|---|---|---|---|
 | 1|John|Fitzgerald|Kennedy|
 | 2|Maria|Eduarda|Hoffmann|
 | 3|Theodore|Charles|Kyle|
