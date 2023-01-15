@@ -89,15 +89,18 @@ preview:
   enableKatex: true
   automaticallyShowPreview: false
 publishing:
+  giscus:
+    theme: dark
   enableFMTitle: true
   enableNoteTitleForLink: true
   enablePrettyRefs: true
   enableKatex: true
   copyAssets: true
   siteHierarchies:
+    - private
     - OverDeveloped
     - nibm
-    - docker
+    - containers
   writeStubs: false
   siteRootDir: docs
   seo:
@@ -115,8 +118,6 @@ publishing:
   enableTaskNotes: true
   enablePrettyLinks: true
   searchMode: search
-  giscus:
-    theme: dark
   siteIndex: OverDeveloped
   siteUrl: https://arkamfahry.github.io
   assetsPrefix: /OverDeveloped
