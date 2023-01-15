@@ -6,7 +6,7 @@ updated: 1673758813273
 created: 1673711892787
 ---
 
-If a relation contains any type of [[multi value|nibm.dse.dbms.normalization.types-of-attributes#Multi value attributes]] or [[composite attributes|nibm.dse.dbms.normalization.types-of-attributes#Composite attribute]] it is violation of **first normal form (1NF)**. The relation is in first normal form if it does contain any [[multi value|nibm.dse.dbms.normalization.types-of-attributes#Multi value attributes]] or [[composite attributes|nibm.dse.dbms.normalization.types-of-attributes#Composite attribute]]. In simple terms a relation is in first normal form if every attribute in that relation is singled valued atomic attribute.
+If a relation contains any type of [[multi value|nibm.dse.dbms.types-of-attributes#Multi value attributes]] or [[composite attributes|nibm.dse.dbms.types-of-attributes#Composite attribute]] it is violation of **first normal form (1NF)**. The relation is in first normal form if it does contain any [[multi value|nibm.dse.dbms.types-of-attributes#Multi value attributes]] or [[composite attributes|nibm.dse.dbms.types-of-attributes#Composite attribute]]. In simple terms a relation is in first normal form if every attribute in that relation is singled valued atomic attribute.
 
 ### A relation in 1NF
 
@@ -26,7 +26,7 @@ User Table
 | 2|Logan|011231234, 0113322424, 077341234|
 | 3|Paul|011231234, 0113322424|
 
-In the above table Phone_Number has multiple values this means it is a [[multi value attribute|nibm.dse.dbms.normalization.types-of-attributes#Multi value attributes]] so this is not in 1NF form.
+In the above table Phone_Number has multiple values this means it is a [[multi value attribute|nibm.dse.dbms.types-of-attributes#Multi value attributes]] so this is not in 1NF form.
 
 Ex 2:
 
@@ -52,7 +52,7 @@ User Table
 | 2|Logan|011231234, 0113322424, 077341234|
 | 3|Paul|011231234, 0113322424|
 
-Lets resolve the above [[multi value|nibm.dse.dbms.normalization.types-of-attributes#Multi value attributes]] anomaly
+Lets resolve the above [[multi value|nibm.dse.dbms.types-of-attributes#Multi value attributes]] anomaly
 
 User Table
 
@@ -62,7 +62,7 @@ User Table
 | 2|Logan|
 | 3|Paul|
 
-above table [[multi value attributes |nibm.dse.dbms.normalization.types-of-attributes#Multi value attributes]] Phone_Number has been omitted and extracted to a new table which is shown below
+above table [[multi value attributes|nibm.dse.dbms.types-of-attributes#Multi value attributes]] Phone_Number has been omitted and extracted to a new table which is shown below
 
 User_Phone_Number Table
 
@@ -88,7 +88,7 @@ Student Table
 | 2|13|Maria Eduarda Hoffmann|
 | 3|14|Theodore Charles Kyle|
 
-Lets resolve the above [[composite value|nibm.dse.dbms.normalization.types-of-attributes#Composite attribute]] anomaly
+Lets resolve the above [[composite value|nibm.dse.dbms.types-of-attributes#Composite attribute]] anomaly
 
 Student Table
 
@@ -98,7 +98,7 @@ Student Table
 | 2|13|
 | 3|14|
 
-above table [[composite value attribute|nibm.dse.dbms.normalization.types-of-attributes#Composite attribute]] Full_Name has been omitted and extracted to a new table which is shown below
+above table [[composite value attribute|nibm.dse.dbms.types-of-attributes#Composite attribute]] Full_Name has been omitted and extracted to a new table which is shown below
 
 Student_Full_Name Table
 
