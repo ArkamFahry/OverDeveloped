@@ -97,7 +97,6 @@ publishing:
   enableKatex: true
   copyAssets: true
   siteHierarchies:
-    - private
     - OverDeveloped
     - nibm
     - containers
