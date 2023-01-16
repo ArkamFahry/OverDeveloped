@@ -1,6 +1,6 @@
 ---
 id: 9i1milmr4y0eb1u3t3tl63w
-title: Full Functional Dependecy
+title: Full Functional Dependency
 desc: ''
 updated: 1673797462437
 created: 1673796255464

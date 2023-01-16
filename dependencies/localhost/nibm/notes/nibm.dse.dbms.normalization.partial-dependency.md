@@ -1,6 +1,6 @@
 ---
 id: 4z6kmlesnvekbo6sft2mhhy
-title: Partial Functional Dependecy
+title: Partial Dependency
 desc: ''
 updated: 1673796161288
 created: 1673785982686
