@@ -11,8 +11,8 @@ Simply put data Normalization is the process of minimizing redundancy from a rel
 
 ## There are 4 steps in database in data normalization
 
-- [[First Normal Form - 1NF |nibm.dse.dbms.normalization.first-normal-form-1nf.md]]
-- [[Second Normal Form -  2NF |nibm.dse.dbms.normalization.second-normal-form-2nf]]
-- [[Third Normal Form - 3NF |nibm.dse.dbms.normalization.third-normal-form-3nf]]
-- [[Boyce Codd Normal Form (Fourth Normal Form) - 4NF |nibm.dse.dbms.normalization.boyce-codd-normal-form-4nf]]
+- [[First Normal Form - 1NF|nibm.dse.dbms.normalization.1nf-first-normal-form]]
+- [[Second Normal Form -  2NF|nibm.dse.dbms.normalization.2nf-second-normal-form]]
+- [[Third Normal Form - 3NF|nibm.dse.dbms.normalization.3nf-third-normal-form]]
+- [[Boyce Codd Normal Form (Fourth Normal Form) - 4NF|nibm.dse.dbms.normalization.4nf-boyce-codd-normal-form]]
   

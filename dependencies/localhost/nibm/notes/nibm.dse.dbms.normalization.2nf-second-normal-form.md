@@ -1,12 +1,12 @@
 ---
 id: f1zwovuh9im3dxhfws0mh6j
-title: Second Normal Form 2nf
+title: 2nf Second Normal Form
 desc: ''
 updated: 1673878947659
 created: 1673761287920
 ---
 
-To be in second normal form relation must be in [[first normal form |nibm.dse.dbms.normalization.first-normal-form-1nf]] and relation must not contain any partial dependencies. A relation will be in 2NF if it has no [[partial dependency|nibm.dse.dbms.normalization.partial-dependency]]
+To be in second normal form relation must be in [[first normal form|nibm.dse.dbms.normalization.1nf-first-normal-form]] and relation must not contain any partial dependencies. A relation will be in 2NF if it has no [[partial dependency|nibm.dse.dbms.normalization.partial-dependency]]
 
 Second normal form is based on the concept of full functional dependency.Second normal for applies to a relation with a composite keys where the relations primary key is comprised of two or more attributes.A relation with a single-attribute primary key is automatically in at least 2NF. A relation that is not in 2NF may suffer from the update anomalies.
 

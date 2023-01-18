@@ -1,6 +1,6 @@
 ---
 id: yy2wmuifbidt7x1ne05lyzx
-title: First Normal Form 1nf
+title: 1nf First Normal Form
 desc: ''
 updated: 1673924126241
 created: 1673711892787
