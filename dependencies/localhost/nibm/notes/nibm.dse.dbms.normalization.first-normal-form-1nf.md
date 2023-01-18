@@ -2,7 +2,7 @@
 id: yy2wmuifbidt7x1ne05lyzx
 title: First Normal Form 1nf
 desc: ''
-updated: 1673875413698
+updated: 1673924126241
 created: 1673711892787
 ---
 
@@ -16,7 +16,7 @@ If a relation contains any type of [[multi value|nibm.dse.dbms.types-of-attribut
 
 >💫 Short Note
 >
-> If a relation has repeating groups which means multi value or composite attributes it will not be in 1NF
+> If a relation has repeating groups which are multi value or composite attributes it will not be in 1NF
 
 Ex:
 
