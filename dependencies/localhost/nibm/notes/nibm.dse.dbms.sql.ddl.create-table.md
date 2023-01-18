@@ -2,7 +2,7 @@
 id: le17qusox6pw0w00yj7cpbx
 title: Create Table
 desc: ''
-updated: 1673870484807
+updated: 1674044616817
 created: 1673844478305
 ---
 

@@ -2,7 +2,7 @@
 id: 07zlzc6ukbs90726n9d8mcu
 title: Transitive Dependency
 desc: ''
-updated: 1673939178982
+updated: 1674047851526
 created: 1673882075966
 ---
 When an indirect relationship causes functional dependency it is called Transitive Dependency.
@@ -24,9 +24,8 @@ Game Studio
 |Studio_ID|Studio_Name|Game|Head_Quartes|
 |---|---|---|---|
 |G1|Ubisoft|Rainbow Six Seige|France|
-|G1|Ubisoft|Assassins Creed|France|
 |G2|Active Vision|Call Of Duty|USA|
-|G3|Sucker Punch|Ghost of Tsushima|Japan|
+|G3|Sucker Punch|Ghost of Tsushima|USA|
 
 - In the above game studio table
   - $Game -> Studio\_Name$ : the Game attributes determine  Studio_Name
@@ -38,4 +37,44 @@ Game Studio
 
 ### Lets remove the above transitive dependency
 
+- To remove the above transitive dependency first lets consider the above table with three attributes (Studio_ID, Studio_Name, Head_Quartes)
 
+Game Studio
+
+|Studio_ID|Studio_Name|Head_Quartes|
+|---|---|---|
+|G1|Ubisoft|France|
+|G2|Active Vision|USA|
+|G3|Sucker Punch|USA|
+
+- The above Game Studio table is not in 3NF because it has the Transitive dependency. Let's see what is it
+
+  - $Studio\_ID ->  Studio\_Name$
+  - $Studio\_Name -> Head\_Quartes$
+
+- There for the following dependency exists
+
+  - $Studio\_ID ->  Head\_Quartes$
+
+Lets split the above table into to two tables
+
+- First table - $Game\_Studio (Studio\_ID,  Studio\_Name)$
+- Second table - $Studio\_Head\_Quartes (Studio\_Name,  Head\_Quartes)$
+
+Game Studio table
+
+|Studio_ID|Studio_Name|
+|---|---|
+|G1|Ubisoft|
+|G2|Active Vision|
+|G3|Sucker Punch|
+
+Studio Head Quartes table
+
+|Studio_Name|Head_Quartes|
+|---|---|
+|Ubisoft|France|
+|Active Vision|USA|
+|Sucker Punch|USA|
+
+Now the new Game Studio table and Studio Head Quartes table contains no Transitive dependency and the relation is now in 3NF
