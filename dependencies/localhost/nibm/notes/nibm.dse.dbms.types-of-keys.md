@@ -2,7 +2,7 @@
 id: 808ldgljkgypg0vym3xmkaw
 title: Types of Keys
 desc: ''
-updated: 1673779216803
+updated: 1674059674235
 created: 1673774773938
 ---
 
@@ -25,6 +25,8 @@ Ex: Users relation has User_ID, NIC, Email each of these values can be used to u
 >- There can be more than one candidate key in a relation. For Example, STUD_NO is the candidate key for relation STUDENT.
 >- The candidate key can be simple (having only one attribute) or composite as well. For Example, {STUD_NO, COURSE_NO} is a composite candidate key for relation STUDENT_COURSE.
 >- No, of candidate keys in a Relation are nC(floor(n/2)),for example if a Relation have 5 attributes i.e. R(A,B,C,D,E) then total no of candidate keys are 5C(floor(5/2))=10.
+
+_
 
 >⚠️ Note
 >

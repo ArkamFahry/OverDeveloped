@@ -2,7 +2,7 @@
 id: f1zwovuh9im3dxhfws0mh6j
 title: 2nf Second Normal Form
 desc: ''
-updated: 1673878947659
+updated: 1674059337005
 created: 1673761287920
 ---
 
@@ -51,6 +51,10 @@ Hence,
 - But, Course_No -> Course_Fee this means Course_Fee is dependent on Course_No, which is a proper subset of the candidate key. Non-prime attribute Course_Fee is dependent on a proper subset of the candidate key, which is a partial dependency and so this relation is not in 2NF.
 
 ### Lets resolve the above 2NF anomaly
+
+>💫 Short Note
+>
+>If a partial dependency exists, we remove the partially dependent attribute(s) from the relation by placing them in a new relation along with a copy of their determinant
 
 we need to split the table into two tables such as :
 
