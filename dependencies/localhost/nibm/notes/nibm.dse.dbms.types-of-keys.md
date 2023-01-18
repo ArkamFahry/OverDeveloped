@@ -2,7 +2,7 @@
 id: 808ldgljkgypg0vym3xmkaw
 title: Types of Keys
 desc: ''
-updated: 1674059674235
+updated: 1674059964499
 created: 1673774773938
 ---
 
@@ -88,6 +88,8 @@ Ex: In the relation User User_Role is a foreign key reference to the Role relati
 >- They act as a cross-reference between the tables.
 >- For example, DNO is a primary key in the DEPT table and a foreign key DPT in EMP
 
+_
+
 >⚠️ Note
 > It may be worth noting that unlike the Primary Key of any given relation, Foreign Key can be NULL as well as may contain duplicate tuples it need not follow uniqueness constraint.
 
@@ -100,6 +102,8 @@ Ex: User relation can have a composite key of User_Full_Name + Phone_Number bot 
 >⚠️ Note
 >
 > It still can give duplicate values in rare cases. So , we need to find the optimal set of attributes that can uniquely identify rows in a table
+
+_
 
 >ℹ️ Info
 >
