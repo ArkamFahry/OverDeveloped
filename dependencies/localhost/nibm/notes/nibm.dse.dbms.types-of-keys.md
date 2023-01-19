@@ -2,13 +2,13 @@
 id: 808ldgljkgypg0vym3xmkaw
 title: Types of Keys
 desc: ''
-updated: 1674059964499
+updated: 1674106163427
 created: 1673774773938
 ---
 
 - ## Candidate Key
 
-he minimal set of attributes that can uniquely identify a tuple is known as a candidate key
+The minimal set of attributes that can uniquely identify a tuple is known as a candidate key
 
 Ex: Users relation has User_ID, NIC, Email each of these values can be used to uniquely by them selves identify the tuples in the user relation
 

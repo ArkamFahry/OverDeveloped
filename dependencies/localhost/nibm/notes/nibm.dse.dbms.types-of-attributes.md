@@ -2,7 +2,7 @@
 id: ky2ouefensrlll17kddz2vg
 title: Types of Attributes
 desc: ''
-updated: 1673752337008
+updated: 1674101714812
 created: 1673749650646
 ---
 
@@ -70,7 +70,10 @@ The stored attribute are those attribute which doesn’t require any type of fur
 
 Example: Date of birth is the stored attribute.
 
-## Extra Info
+- ## Prime Attribute
 
----
+A prime attribute is an attribute that is part of any [[candidate key|nibm.dse.dbms.types-of-keys#Candidate Key]] . It can also be used to uniquely identify a tuple in the schema
 
+- ## Non Prime Attribute
+
+Non-prime attribute is an attribute, which is not a part of the [[prime key|nibm.dse.dbms.types-of-keys#Primary Key]], is said to be a non prime attribute
