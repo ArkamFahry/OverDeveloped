@@ -2,42 +2,43 @@
 id: l97vqi680xvk9s9xo65an7i
 title: Class and Object
 desc: ''
-updated: 1673713027109
+updated: 1674355133316
 created: 1673421974016
 ---
 
 ### Class
 
 - A class is a template (blueprint) which is used to create objects in programming
-- A class has attributes and functions 
+- A class has attributes and functions
 
 - For Example
-	- Employee
-		- Attributes 
-			- age
-			- name
-		- Functions
-			- Walk
-			- Work
-			- Eat
+  - Employee
+    - Attributes
+      - age
+      - name
+    - Functions
+      - Walk
+      - Work
+      - Eat
 
-- Java Example 
+- Java Example
+
 ```Java
 Class Employee {
-	private int _age;
-	private String _name;
+ private int _age;
+ private String _name;
 
-	public static void Walk() {
-		//walk function
-	}
+ public static void Walk() {
+  //walk function
+ }
 
-	public static void Work() {
-		//work function
-	}
+ public static void Work() {
+  //work function
+ }
 
-	public static void Eat() {
-		//eat function
-	}
+ public static void Eat() {
+  //eat function
+ }
 }
 ```
 
@@ -52,62 +53,63 @@ Class Employee {
 - An object can be called as a member of a class
 
 - For Example
-	- Employee
-		- Attributes
-			- age - 43
-			- name - Gihan
-		- Functions
-			- Walk
-			- Work
-			- Eat
+  - Employee
+    - Attributes
+      - age - 43
+      - name - Gihan
+    - Functions
+      - Walk
+      - Work
+      - Eat
 
 - Java Example
+
 ```Java
 public class Main {
-	public static void main(String[] args) {
-		// Employee is a class
-		// the employee class creates object e
-		Employee e = new Employee();
+ public static void main(String[] args) {
+  // Employee is a class
+  // the employee class creates object e
+  Employee e = new Employee();
 
-		// age is an attribute and 45 assigned as the value
-		e.set_age(45);
+  // age is an attribute and 45 assigned as the value
+  e.set_age(45);
 
-		// name is an attribute and Gihana assigned as the value
-		e.set_name("Gihana");
+  // name is an attribute and Gihana assigned as the value
+  e.set_name("Gihana");
 
-		// Functions are activities which the object can do
-		e.Walk();
-		e.Work();
-		e.Eat();
-	}
+  // Functions are activities which the object can do
+  e.Walk();
+  e.Work();
+  e.Eat();
+ }
 }
 
 class Employee {
-	// all ways keep attributes private
-	// So outside class can't access the value directly 
-	private int _age;
-	private String _name;
+ // all ways keep attributes private
+ // So outside class can't access the value directly 
+ private int _age;
+ private String _name;
 
-	// use  setters set age value 
-	public void set_age(int age) {
-		_age = age;
-	}
+ // use  setters set age value 
+ public void set_age(int age) {
+  _age = age;
+ }
 
-	// use  setters set name value
-	public void set_name(String name) {
-		_name = name;
-	}
+ // use  setters set name value
+ public void set_name(String name) {
+  _name = name;
+ }
 
-	public void Walk() {
-		System.out.println(_name + " Walks");
-	}
+ public void Walk() {
+  System.out.println(_name + " Walks");
+ }
 
-	public void Work() {
-		System.out.println(_name + " Works");
-	}
+ public void Work() {
+  System.out.println(_name + " Works");
+ }
 
-	public void Eat() {
-		System.out.println(_name + " Eats");
-	}
+ public void Eat() {
+  System.out.println(_name + " Eats");
+ }
 }
 ```

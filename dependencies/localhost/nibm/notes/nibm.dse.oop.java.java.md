@@ -2,7 +2,7 @@
 id: jnv4xlcdfy96sf83qpaf4gp
 title: Java
 desc: ''
-updated: 1674045489402
+updated: 1674355679065
 created: 1673421974016
 ---
 #### Install Java JDK
@@ -32,6 +32,7 @@ created: 1673421974016
 #### Java data types
 
 - Primitive data  types
+
 |Type|Size|
 |---|---|
 |byte|1 byte|
@@ -66,7 +67,7 @@ public class main {
 
 - Using the java compiler (javac) compile the java source file
 
-```
+```Pws
 D:\Projects\Java> javac main.java
 ```
 
@@ -75,7 +76,7 @@ D:\Projects\Java> javac main.java
 
 - Using the java virtual machine run the java class file which contains the java byte code
 
-```
+```Pws
 D:\Projects\Java> java main // do not put the class extension it will throw an error
 ```
 
@@ -112,22 +113,22 @@ public class InputAndOutput {
 
 ```Java
 public class IfElse {
-    public static void main(String[] args) {
-        int num;
-        
-        System.out.print("Enter num : ");
-        num = Integer.parseInt(System.console().readLine());
+  public static void main(String[] args) {
+    int num;
+      
+    System.out.print("Enter num : ");
+    num = Integer.parseInt(System.console().readLine());
 
-        if(num>100) {
-            System.out.print("Excellent");
-        } else if(num>80) {
-            System.out.print("Good");
-        } else if(num>60) {
-            System.out.print("Average");
-        } else {
-            System.out.print("Fail");
-        }
+    if(num>100) {
+        System.out.print("Excellent");
+    } else if(num>80) {
+        System.out.print("Good");
+    } else if(num>60) {
+        System.out.print("Average");
+    } else {
+        System.out.print("Fail");
     }
+  }
 }
 ```
 
@@ -135,23 +136,23 @@ public class IfElse {
 
 ```Java
 public class Hello {
- public static void main(String[] args) {
-  int num;
+  public static void main(String[] args) {
+    int num;
 
-  System.out.print("Enter num : ");
-  num = Integer.parseInt(System.console().readLine());
+    System.out.print("Enter num : ");
+    num = Integer.parseInt(System.console().readLine());
   
-  switch(num) {
-   case 90:
-    System.out.println("A");
-    break;
-   case 70:
-    System.out.println("B");
-    break;
-   default:
-    System.out.println("C");
-    break;
-  }
+    switch(num) {
+      case 90:
+        System.out.println("A");
+      break;
+      case 70:
+        System.out.println("B");
+      break;
+      default:
+        System.out.println("C");
+      break;
+    }
  }
 }
 ```
@@ -178,43 +179,43 @@ public class Hello {
 
 ```Java
 public class CastHigherToLower {
- public static void main(String[] args) {
-  float a = 100;
-  int b;
-  b=(int)a;
-  System.out.println(b);
- }
+  public static void main(String[] args) {
+    float a = 100;
+    int b;
+    b=(int)a;
+    System.out.println(b);
+  }
 }
 
 public class CastHigherToLower {
- public static void main(String[] args) {
-  byte a;
-  int b = 100;
-  a=(byte)b;
-  System.out.println(b);
- }
+  public static void main(String[] args) {
+    byte a;
+    int b = 100;
+    a=(byte)b;
+    System.out.println(b);
+  }
 }
 ```
 
 - Cast lower value to higher value
 
 ```Java
-public class CastLowerToHiger {
- public static void main(String[] args) {
-  int a = 100;
-  float b;
-  b=a;
-  System.out.println(b);
- }
+public class CastLowerToHigher {
+  public static void main(String[] args) {
+    int a = 100;
+    float b;
+    b=a;
+    System.out.println(b);
+  }
 }
 
-public class CastLowerToHiger {
- public static void main(String[] args) {
-  float a = 100;
-  double b;
-  b=a;
-  System.out.println(b);
- }
+public class CastLowerToHigher {
+  public static void main(String[] args) {
+    float a = 100;
+    double b;
+    b=a;
+    System.out.println(b);
+  }
 }
 ```
 
@@ -224,11 +225,11 @@ public class CastLowerToHiger {
 
 ```Java
 public class StringToInt {
- public static void main(String args[]) {
-  String value = "100";
-  int x = Integer.parseInt(value);
-  System.out.println(x);
- }
+  public static void main(String args[]) {
+    String value = "100";
+    int x = Integer.parseInt(value);
+    System.out.println(x);
+  }
 }
 ```
 
@@ -236,11 +237,11 @@ public class StringToInt {
 
 ```Java
 public class StringToFloat {
- public static void main(String args[]) {
-  String value = "100";
-  float x = Float.parseFloat(value);
-  System.out.println(x);
- }
+  public static void main(String args[]) {
+    String value = "100";
+    float x = Float.parseFloat(value);
+    System.out.println(x);
+  }
 }
 ```
 
@@ -248,11 +249,11 @@ public class StringToFloat {
 
  ```Java
 public class StringToDouble {
- public static void main(String args[]) {
-  String value = "100";
-  double x = Double.parseDouble(value);
-  System.out.println(x);
- }
+  public static void main(String args[]) {
+    String value = "100";
+    double x = Double.parseDouble(value);
+    System.out.println(x);
+  }
 }
 ```
 
