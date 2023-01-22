@@ -2,7 +2,7 @@
 id: u0tckorg6m3tdccwwvww6we
 title: 3nf Third Normal Form
 desc: ''
-updated: 1674099563409
+updated: 1674383261260
 created: 1673765736892
 ---
 
@@ -13,7 +13,7 @@ A relation is in third normal form, if there is no [[transitive dependency|nibm.
 
 - A relation is in 3NF if at least one of the following condition holds in every non-trivial function dependency $P –> Q$:
 
-  - $P$ is a [[super key|nibm.dse.dbms.types-of-keys#Super Key]]. That means right side needs to be a [[super key|nibm.dse.dbms.types-of-keys#Super Key]] 
+  - $P$ is a [[super key|nibm.dse.dbms.types-of-keys#Super Key]]. That means right side needs to be a [[super key|nibm.dse.dbms.types-of-keys#Super Key]]
   - $Q$ is a prime attribute (each element of Y is part of some. that [[candidate key|nibm.dse.dbms.types-of-keys#Candidate Key]]). That means the left side needs to be a prime attribute
   
 >💫 Short Note
