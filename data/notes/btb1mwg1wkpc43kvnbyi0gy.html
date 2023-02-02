@@ -1,0 +1,84 @@
+<h1 id="encapculation">Encapculation<a aria-hidden="true" class="anchor-heading icon-link" href="#encapculation"></a></h1>
+<ul>
+<li>
+<p>Encapsulation is the process of combining Attributes and Methods in to single unit.</p>
+</li>
+<li>
+<p>The basic unit of encapsulation is the class.</p>
+</li>
+<li>
+<p>The class holds the attributes and methods</p>
+<ul>
+<li>attributes in a class are hidden using private label</li>
+<li>methods in class can be public and these methods are used to access private attributes</li>
+</ul>
+</li>
+<li>
+<p>Java Encapsulation Example</p>
+</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Employee is a class</span>
+        <span class="token comment">// the employee class creates object e</span>
+        <span class="token class-name">Employee</span> e <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Employee</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       
+		<span class="token comment">// setter methods are used to set values to private attributes</span>
+        <span class="token comment">// age is an attribute and 45 assigned as the value</span>
+        e<span class="token punctuation">.</span><span class="token function">set_age</span><span class="token punctuation">(</span><span class="token number">45</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// name is an attribute and Gihana assigned as the value</span>
+        e<span class="token punctuation">.</span><span class="token function">set_name</span><span class="token punctuation">(</span><span class="token string">"Gihana"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment">// getters are used to get values from private attributes</span>
+		e<span class="token punctuation">.</span><span class="token function">get_age</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		e<span class="token punctuation">.</span><span class="token function">get_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// Functions are activities which the object can do</span>
+        <span class="token class-name"><span class="token namespace">e<span class="token punctuation">.</span></span>Walk</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name"><span class="token namespace">e<span class="token punctuation">.</span></span>Work</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name"><span class="token namespace">e<span class="token punctuation">.</span></span>Eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">/* Employee class  encapsulates all the attributes and methods the employee has like a capsule*/</span>
+<span class="token keyword">class</span> <span class="token class-name">Employee</span> <span class="token punctuation">{</span>
+    <span class="token comment">// all ways keep attributes private</span>
+    <span class="token comment">// So outside class can't access the value directly</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> _age<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> _name<span class="token punctuation">;</span>
+
+    <span class="token comment">// use setters set age value</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">set_age</span><span class="token punctuation">(</span><span class="token keyword">int</span> age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        _age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// use setters set name value</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">set_name</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        _name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// use getters to get age value</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">get_age</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">return</span> _age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// use getters to get age value</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">get_name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> _name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Walk</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>_name <span class="token operator">+</span> <span class="token string">" Walks"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Work</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>_name <span class="token operator">+</span> <span class="token string">" Works"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token class-name">Eat</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>_name <span class="token operator">+</span> <span class="token string">" Eats"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>

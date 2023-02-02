@@ -1,0 +1,49 @@
+<h1 id="order-by">Order By<a aria-hidden="true" class="anchor-heading icon-link" href="#order-by"></a></h1>
+<ul>
+<li>
+<p>Ordering of result is using ORDER BY</p>
+<ul>
+<li>Using ORDER BY clause &#x26;</li>
+<li>ASC (default) and DESC clause</li>
+</ul>
+</li>
+<li>
+<p>There are two ways of ordering</p>
+<ul>
+<li>ASC - ascending order</li>
+<li>DESC - descending order</li>
+</ul>
+</li>
+<li>
+<p>The ORDER BY keyword is used to sort the result-set in ascending or descending order.</p>
+</li>
+<li>
+<p>The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.</p>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token keyword">column</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ASC</span><span class="token operator">|</span><span class="token keyword">DESC</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>ORDER BY several columns example</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> column1<span class="token punctuation">,</span> column2<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ASC</span><span class="token operator">|</span><span class="token keyword">DESC</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>ℹ️ Info</p>
+<p>Multiple columns can be used to order the retrieving data in a select query</p>
+</blockquote>
+<ul>
+<li>ORDER BY several columns example with both ascending ( ASC ) and descending ( DESC )</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> Customers
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">ASC</span><span class="token punctuation">,</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">DESC</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>ℹ️ Info</p>
+<p>Multiple columns can be used to order the retrieving data in a select query with both ASC and DESC order</p>
+</blockquote>

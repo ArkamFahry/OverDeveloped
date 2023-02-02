@@ -1,0 +1,154 @@
+<h1 id="2nf-second-normal-form">2nf Second Normal Form<a aria-hidden="true" class="anchor-heading icon-link" href="#2nf-second-normal-form"></a></h1>
+<p>To be in second normal form relation must be in <a href="/OverDeveloped/notes/yy2wmuifbidt7x1ne05lyzx">first normal form</a> and relation must not contain any partial dependencies. A relation will be in 2NF if it has no <a href="/OverDeveloped/notes/4z6kmlesnvekbo6sft2mhhy">partial dependency</a></p>
+<p>Second normal form is based on the concept of full functional dependency.Second normal for applies to a relation with a composite keys where the relations primary key is comprised of two or more attributes.A relation with a single-attribute primary key is automatically in at least 2NF. A relation that is not in 2NF may suffer from the update anomalies.</p>
+<p>A relation is in 2NF if it has No Partial Dependency that means no non-prime attribute (attributes which are not part of any candidate key) is dependent on any proper subset of any candidate key of the table</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<p>A relation that is in First Normal Form and every non primary key attribute is fully functionally dependent on the primary key, then the relation is in Second Normal Form (2NF).</p>
+</blockquote>
+<p>_</p>
+<blockquote>
+<p>⚠️ Note</p>
+<p>If the proper subset of candidate key determines non-prime attribute, it is called <a href="/OverDeveloped/notes/4z6kmlesnvekbo6sft2mhhy">partial dependency</a> a relation which meets this criteria is not in 2NF</p>
+</blockquote>
+<p>_</p>
+<blockquote>
+<p>💫 Short Note</p>
+<p>If the proper subset of candidate key determines non-prime attribute in a relation it will not be in 2NF</p>
+</blockquote>
+<p>EX:</p>
+<p>EX 1:</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Std_Id</th><th>Course_No</th><th>Course_Fee</th></tr></thead><tbody><tr><td>codse21.1-01</td><td>DSE</td><td>2000</td></tr><tr><td>codse21.1-02</td><td>DCSD</td><td>4000</td></tr><tr><td>codse21.1-01</td><td>CSE</td><td>1500</td></tr><tr><td>codse21.1-03</td><td>DSE</td><td>2000</td></tr><tr><td>codse21.1-03</td><td>DNE</td><td>3500</td></tr><tr><td>codse21.1-02</td><td>BSC</td><td>2100</td></tr></tbody></table></div>
+<p>See the above table there is many course having the same fee</p>
+<ul>
+<li>Course_Fee cannot alone decide the value of Course_No or Std_Id</li>
+<li>Course_Fee together with Std_Id cannot decide the value of Course_No</li>
+<li>Course_Fee together with Course_No cannot decide the value of Std_Id
+Hence,</li>
+<li>Course_Fee would be a non-prime attribute, as it does not belong to the one only candidate key {Std_Id, Course_No}</li>
+<li>But, Course_No -> Course_Fee this means Course_Fee is dependent on Course_No, which is a proper subset of the candidate key. Non-prime attribute Course_Fee is dependent on a proper subset of the candidate key, which is a partial dependency and so this relation is not in 2NF.</li>
+</ul>
+<h3 id="lets-resolve-the-above-2nf-anomaly">Lets resolve the above 2NF anomaly<a aria-hidden="true" class="anchor-heading icon-link" href="#lets-resolve-the-above-2nf-anomaly"></a></h3>
+<blockquote>
+<p>💫 Short Note</p>
+<p>If a partial dependency exists, we remove the partially dependent attribute(s) from the relation by placing them in a new relation along with a copy of their determinant</p>
+</blockquote>
+<p>we need to split the table into two tables such as :</p>
+<p>Table 1: Std_Id, Course_No</p>
+<p>Table 2: Course_No, Course_Fee</p>
+<p>Table 1</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Std_Id</th><th>Course_No</th></tr></thead><tbody><tr><td>codse21.1-01</td><td>DSE</td></tr><tr><td>codse21.1-02</td><td>DCSD</td></tr><tr><td>codse21.1-01</td><td>CSE</td></tr><tr><td>codse21.1-03</td><td>DSE</td></tr><tr><td>codse21.1-03</td><td>DNE</td></tr><tr><td>codse21.1-02</td><td>BSC</td></tr></tbody></table></div>
+<p>Table 2</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Course_No</th><th>Course_Fee</th></tr></thead><tbody><tr><td>DSE</td><td>2000</td></tr><tr><td>DCSD</td><td>4000</td></tr><tr><td>CSE</td><td>1500</td></tr><tr><td>DNE</td><td>3500</td></tr><tr><td>BSC</td><td>2100</td></tr></tbody></table></div>
+<blockquote>
+<p>⚠️ Note</p>
+<p>2NF tries to reduce the redundant data getting stored in memory. For instance, if there are 100 students taking DSE course, we don't need to store its Fee as 2000 for all the 100 records, instead once we can store it in the second table as the course fee for DSE is 2000</p>
+</blockquote>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/OverDeveloped/notes/pajhgmda120khu4vi6eumgh">Normalization (nibm)</a></li>
+<li><a href="/OverDeveloped/notes/u0tckorg6m3tdccwwvww6we">3nf Third Normal Form (nibm)</a></li>
+</ul>

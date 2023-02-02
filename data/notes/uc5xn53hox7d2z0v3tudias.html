@@ -1,0 +1,45 @@
+<h1 id="check">Check<a aria-hidden="true" class="anchor-heading icon-link" href="#check"></a></h1>
+<p>CHECK will be used to set a check constraint on table creation</p>
+<ul>
+<li>table with inline CHECK</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Employee <span class="token punctuation">(</span>
+    Id <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Name <span class="token operator">LIKE</span> <span class="token string">'A%'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Salary <span class="token keyword">REAL</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Salary <span class="token operator">BETWEEN</span> <span class="token number">1000</span> <span class="token operator">AND</span> <span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Age <span class="token keyword">INT</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Age <span class="token operator">></span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Dept <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>table with CHECK at the end</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Employee <span class="token punctuation">(</span>
+    Id <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Salary <span class="token keyword">REAL</span><span class="token punctuation">,</span>
+    Age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    Dept <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Name <span class="token operator">LIKE</span> <span class="token string">'A%'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Salary <span class="token operator">BETWEEN</span> <span class="token number">1000</span> <span class="token operator">AND</span> <span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Age <span class="token operator">></span> <span class="token number">18</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>table with named CHECK at the end</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Employee <span class="token punctuation">(</span>
+    Id <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Salary <span class="token keyword">REAL</span><span class="token punctuation">,</span>
+    Age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    Dept <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> chk_name <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Name <span class="token operator">LIKE</span> <span class="token string">'A%'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> chk_salary <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Salary <span class="token operator">BETWEEN</span> <span class="token number">1000</span> <span class="token operator">AND</span> <span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> chk_age <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>Age <span class="token operator">></span> <span class="token number">18</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>ℹ️ Info</p>
+<p>I f constraint CHECK is created with a name it can be dropped or altered by it's given name</p>
+</blockquote>

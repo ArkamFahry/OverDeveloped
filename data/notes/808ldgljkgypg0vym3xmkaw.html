@@ -1,0 +1,126 @@
+<h1 id="types-of-keys">Types of Keys<a aria-hidden="true" class="anchor-heading icon-link" href="#types-of-keys"></a></h1>
+<ul>
+<li>
+<h2 id="candidate-key">Candidate Key<a aria-hidden="true" class="anchor-heading icon-link" href="#candidate-key"></a></h2>
+</li>
+</ul>
+<p>The minimal set of attributes that can uniquely identify a tuple is known as a candidate key</p>
+<p>Ex: Users relation has User_ID, NIC, Email each of these values can be used to uniquely by them selves identify the tuples in the user relation</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<ul>
+<li>It is a minimal super key.</li>
+<li>It is a super key with no repeated data is called a candidate key.</li>
+<li>The minimal set of attributes that can uniquely identify a record.</li>
+<li>It must contain unique values.</li>
+<li>It can contain NULL values.</li>
+<li>Every table must have at least a single candidate key.</li>
+<li>A table can have multiple candidate keys but only one primary key (the primary key cannot have a NULL value, so the candidate key with NULL value can’t be the primary key).</li>
+<li>The value of the Candidate Key is unique and may be null for tuple.</li>
+<li>There can be more than one candidate key in a relation. For Example, STUD_NO is the candidate key for relation STUDENT.</li>
+<li>The candidate key can be simple (having only one attribute) or composite as well. For Example, {STUD_NO, COURSE_NO} is a composite candidate key for relation STUDENT_COURSE.</li>
+<li>No, of candidate keys in a Relation are nC(floor(n/2)),for example if a Relation have 5 attributes i.e. R(A,B,C,D,E) then total no of candidate keys are 5C(floor(5/2))=10.</li>
+</ul>
+</blockquote>
+<p>_</p>
+<blockquote>
+<p>⚠️ Note</p>
+<p>In SQL Server a unique constraint that has a nullable column, allows the value ‘null‘ in that column only once. That’s why the STUD_PHONE attribute is a candidate here, but can not be ‘null’ value in the primary key attribute.</p>
+</blockquote>
+<ul>
+<li>
+<h2 id="super-key">Super Key<a aria-hidden="true" class="anchor-heading icon-link" href="#super-key"></a></h2>
+</li>
+</ul>
+<p>A set of attributes that can uniquely identify a tuple is known as Super Key</p>
+<p>Ex: Student relation Student_No, Phone_Number, (Student_No, Student_Name)</p>
+<p>A super key is a group of single or multiple keys that identifies rows in a relation. Attributes in a super key can be NULL</p>
+<p>Ex: Student_No + Phone_Number is a super key</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<ul>
+<li>Adding zero or more attributes to the candidate key generates the super key.</li>
+<li>A candidate key is a super key but vice versa is not true.</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<h2 id="primary-key">Primary Key<a aria-hidden="true" class="anchor-heading icon-link" href="#primary-key"></a></h2>
+</li>
+</ul>
+<p>The main key of a relation. selected from the most relevant candidate key according to the criteria. there can be more than one candidate key in relation out of which one can be chosen as the primary key</p>
+<p>Ex: Student_No, Student_Phone_No, NIC are candidate keys of the Student relation. But student number is selected as the primary key because it is most relevant for the system where students reside</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<ul>
+<li>It is a unique key.</li>
+<li>It can identify only one tuple (a record) at a time.</li>
+<li>It has no duplicate values, it has unique values.</li>
+<li>It cannot be NULL.</li>
+<li>Primary keys are not necessarily to be a single column; more than one column can also be a primary key for a table.</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<h2 id="alternate-key">Alternate Key<a aria-hidden="true" class="anchor-heading icon-link" href="#alternate-key"></a></h2>
+</li>
+</ul>
+<p>The candidate key which is other than the primary key is called an alternate key.</p>
+<p>Ex: Student_No, Student_Phone_No both these keys will candidate keys for the Student relation but Student_Phone_No will be alternative key (one out of many candidate keys). It is a secondary key.</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<ul>
+<li>All the keys which are not primary keys are called alternate keys.</li>
+<li>It contains two or more fields to identify two or more records.</li>
+<li>These values are repeated.</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<h2 id="foreign--key">Foreign  Key<a aria-hidden="true" class="anchor-heading icon-link" href="#foreign--key"></a></h2>
+</li>
+</ul>
+<p>This is key which can take a value if it is only present as a value of a other attribute it will be the foreign key to the attribute which it refers to.  </p>
+<p>The relation which is being referenced is called referenced relation and the corresponding attribute is called referenced attribute and the relation which refers to the <strong>referenced relation</strong> is called referencing relation and the corresponding attribute is called <strong>referencing attribute</strong>. The referenced attribute of the referenced relation should be the primary key to it.</p>
+<p>Ex: In the relation User User_Role is a foreign key reference to the Role relations primary key</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<ul>
+<li>It is a key it acts as a primary key in one table and it acts as secondary key in another table.</li>
+<li>It combines two or more relations (table) at a time.</li>
+<li>They act as a cross-reference between the tables.</li>
+<li>For example, DNO is a primary key in the DEPT table and a foreign key DPT in EMP</li>
+</ul>
+</blockquote>
+<p>_</p>
+<blockquote>
+<p>⚠️ Note
+It may be worth noting that unlike the Primary Key of any given relation, Foreign Key can be NULL as well as may contain duplicate tuples it need not follow uniqueness constraint.</p>
+</blockquote>
+<ul>
+<li>
+<h2 id="composite-key">Composite Key<a aria-hidden="true" class="anchor-heading icon-link" href="#composite-key"></a></h2>
+</li>
+</ul>
+<p>Is Sometime scenarios, a table might not have a single column/attribute that uniquely identifies all the records of a table. In order to uniquely identify rows of a table, combination of two or more columns/attributes can be used.</p>
+<p>Ex: User relation can have a composite key of User_Full_Name + Phone_Number bot values combined can identify and access a user</p>
+<blockquote>
+<p>⚠️ Note</p>
+<p>It still can give duplicate values in rare cases. So , we need to find the optimal set of attributes that can uniquely identify rows in a table</p>
+</blockquote>
+<p>_</p>
+<blockquote>
+<p>ℹ️ Info</p>
+<ul>
+<li>It acts as a primary key if there is no primary key in a table</li>
+<li>Two or more attributes are used to together to make a composite key.</li>
+<li>Different combinations of attributes may give different accuracy in terms of identifying the rows uniquely.</li>
+</ul>
+</blockquote>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg">Types of Attributes (nibm)</a></li>
+<li><a href="/OverDeveloped/notes/u0tckorg6m3tdccwwvww6we">3nf Third Normal Form (nibm)</a></li>
+<li><a href="/OverDeveloped/notes/nlnbn8ps4lzba1x6vv62w3l">4nf Boyce Codd Normal Form (nibm)</a></li>
+</ul>

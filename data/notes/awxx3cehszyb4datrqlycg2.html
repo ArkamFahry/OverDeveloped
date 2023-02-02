@@ -1,0 +1,44 @@
+<h1 id="docker">Docker<a aria-hidden="true" class="anchor-heading icon-link" href="#docker"></a></h1>
+<p><strong>Docker</strong> is a set of platform as a service (PaaS) products which uses OS-level virtualization to deliver software in a <em>container</em> . A container is light weight isolated virtual environment which runs reliably in any environment which has a docker engine.</p>
+<h4 id="why-do-we-need-docker">Why do we need docker<a aria-hidden="true" class="anchor-heading icon-link" href="#why-do-we-need-docker"></a></h4>
+<p>Let say you have built some app. Which runs in a weird flavor of Linux  and it's written in COBOL. So lets say your trying to share this app with your friend. But he doesn't even use Linux or he doesn't even know what is COBOL. So he can't use your cool app. So we will  have have t o replicate our environment. We can use a virtual machine to do this which is the OG way to do it. In the VM the hardware is simulated and installed with the required OS and dependencies but because each VM has it's own OS they are bulky, heavy and slow. So you can use a docker container to share your app. Docker containers are the same as VM's but with a key difference is without virtualizing hardware the docker engine virtualized the OS and uses the shared kernel to run the applications. Which means docker containers are faster and light weight than VM's. In simple terms docker is fast, reliable and lightweight virtualization solution.</p>
+<h4 id="the-universe-of-docker">The universe of docker<a aria-hidden="true" class="anchor-heading icon-link" href="#the-universe-of-docker"></a></h4>
+<ul>
+<li>Docker File
+<ul>
+<li>The <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">docker_file (Private)</a>  is like DNA it's code which describes how the docker image should be built.</li>
+</ul>
+</li>
+<li>Docker Image
+<ul>
+<li>The docker image  is a snapshot of the software along with all it's dependencies to the operating system level.</li>
+<li>The image is immutable it can be used to spin up multiple containers of the software in the real world.</li>
+</ul>
+</li>
+<li>Docker Container
+<ul>
+<li>The docker container is the running docker image.</li>
+</ul>
+</li>
+<li>Docker Compose
+<ul>
+<li>The <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">docker_compose (Private)</a> file is used to deploy multiple docker containers at once.</li>
+</ul>
+</li>
+</ul>
+<h4 id="the-docker-cli-and-desktop-app">The docker cli and desktop app<a aria-hidden="true" class="anchor-heading icon-link" href="#the-docker-cli-and-desktop-app"></a></h4>
+<ul>
+<li>Docker has a a cli to interact with the docker engine
+<ul>
+<li>The <a title="Private" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank" class="private">docker_commands (Private)</a> can be used to build, deploy, kill and do many more things to docker containers.</li>
+</ul>
+</li>
+<li>Docker also has desktop apps for Windows, Linux and Mac.  </li>
+</ul>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/OverDeveloped/notes/362hlmvangnt9zu9esmnll9">Docker Compose</a></li>
+<li><a href="/OverDeveloped/notes/5zoeu3gz1nxlwlvdbbiobqv">Docker File</a></li>
+<li><a href="/OverDeveloped/notes/5xps6q691bk9c6wqacaq28b">Docker commands</a></li>
+</ol>

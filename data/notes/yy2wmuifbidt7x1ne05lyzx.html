@@ -1,0 +1,265 @@
+<h1 id="1nf-first-normal-form">1nf First Normal Form<a aria-hidden="true" class="anchor-heading icon-link" href="#1nf-first-normal-form"></a></h1>
+<p>If a relation contains any type of <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#multi-value-attributes">multi value</a> or <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#composite-attribute">composite attributes</a> it is violation of <strong>first normal form (1NF)</strong>. The relation is in first normal form if it does contain any <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#multi-value-attributes">multi value</a> or <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#composite-attribute">composite attributes</a>. In simple terms a relation is in first normal form if every attribute in that relation is singled valued atomic attribute.</p>
+<h3 id="a-relation-in-1nf">A relation in 1NF<a aria-hidden="true" class="anchor-heading icon-link" href="#a-relation-in-1nf"></a></h3>
+<ul>
+<li>There is only single valued attributes</li>
+<li>Attribute domain does not change</li>
+<li>There is a unique name for every attribute/column</li>
+</ul>
+<blockquote>
+<p>💫 Short Note</p>
+<p>If a relation has repeating groups which are multi value or composite attributes it will not be in 1NF</p>
+</blockquote>
+<p>Ex:</p>
+<p>Ex 1:</p>
+<p>User Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Name</th><th>Phone_Number</th></tr></thead><tbody><tr><td>1</td><td>John</td><td>011231234, 0113322424</td></tr><tr><td>2</td><td>Logan</td><td>011231234, 0113322424, 077341234</td></tr><tr><td>3</td><td>Paul</td><td>011231234, 0113322424</td></tr></tbody></table></div>
+<p>In the above table Phone_Number has multiple values this means it is a <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#multi-value-attributes">multi value attribute</a> so this is not in 1NF form.</p>
+<p>Ex 2:</p>
+<p>User Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Name</th><th>Phone_Number</th></tr></thead><tbody><tr><td>1</td><td>John</td><td>011231234</td></tr><tr><td>2</td><td>Logan</td><td>011231234</td></tr><tr><td>3</td><td>Paul</td><td>011231234</td></tr></tbody></table></div>
+<p>In the above table Phone_Number has a single atomic value so the above table is in 1NF</p>
+<h2 id="how-to-resolve-a-1nf-anomaly">How to resolve a 1NF anomaly<a aria-hidden="true" class="anchor-heading icon-link" href="#how-to-resolve-a-1nf-anomaly"></a></h2>
+<ul>
+<li>
+<h3 id="multi-value-attribute-resolution-example">Multi value attribute resolution example<a aria-hidden="true" class="anchor-heading icon-link" href="#multi-value-attribute-resolution-example"></a></h3>
+</li>
+</ul>
+<p>User Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Display_Name</th><th>Phone_Number</th></tr></thead><tbody><tr><td>1</td><td>John</td><td>011231234, 0113322424</td></tr><tr><td>2</td><td>Logan</td><td>011231234, 0113322424, 077341234</td></tr><tr><td>3</td><td>Paul</td><td>011231234, 0113322424</td></tr></tbody></table></div>
+<p>Lets resolve the above <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#multi-value-attributes">multi value</a> anomaly</p>
+<p>User Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Display_Name</th></tr></thead><tbody><tr><td>1</td><td>John</td></tr><tr><td>2</td><td>Logan</td></tr><tr><td>3</td><td>Paul</td></tr></tbody></table></div>
+<p>above table <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#multi-value-attributes">multi value attributes</a> Phone_Number has been omitted and extracted to a new table which is shown below</p>
+<p>User_Phone_Number Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Phone_Number</th></tr></thead><tbody><tr><td>1</td><td>011231234</td></tr><tr><td>1</td><td>0113322424</td></tr><tr><td>2</td><td>011231234</td></tr><tr><td>2</td><td>0113322424</td></tr><tr><td>2</td><td>077341234</td></tr><tr><td>3</td><td>011231234</td></tr><tr><td>3</td><td>0113322424</td></tr></tbody></table></div>
+<p>As show in the above table User table ID has been copy pasted to the new relation and th Phone_Number column has cut pasted to the new relation and all the values have been distributed into single atomic values</p>
+<ul>
+<li>
+<h3 id="composite-value-attribute-resolution-example">Composite value attribute resolution example<a aria-hidden="true" class="anchor-heading icon-link" href="#composite-value-attribute-resolution-example"></a></h3>
+</li>
+</ul>
+<p>Student Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Age</th><th>Full_Name</th></tr></thead><tbody><tr><td>1</td><td>12</td><td>John Fitzgerald Kennedy</td></tr><tr><td>2</td><td>13</td><td>Maria Eduarda Hoffmann</td></tr><tr><td>3</td><td>14</td><td>Theodore Charles Kyle</td></tr></tbody></table></div>
+<p>Lets resolve the above <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#composite-attribute">composite value</a> anomaly</p>
+<p>Student Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Age</th></tr></thead><tbody><tr><td>1</td><td>12</td></tr><tr><td>2</td><td>13</td></tr><tr><td>3</td><td>14</td></tr></tbody></table></div>
+<p>above table <a href="/OverDeveloped/notes/ky2ouefensrlll17kddz2vg#composite-attribute">composite value attribute</a> Full_Name has been omitted and extracted to a new table which is shown below</p>
+<p>Student_Full_Name Table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>ID</th><th>Given_Name</th><th>Middle_Name</th><th>Family_Name</th></tr></thead><tbody><tr><td>1</td><td>John</td><td>Fitzgerald</td><td>Kennedy</td></tr><tr><td>2</td><td>Maria</td><td>Eduarda</td><td>Hoffmann</td></tr><tr><td>3</td><td>Theodore</td><td>Charles</td><td>Kyle</td></tr></tbody></table></div>
+<p>As show in the above table User table ID has been copy pasted to the new relation and th Full_Name column has cut pasted to the new relation as three columns Given_Name, Middle_Name, Family_Name and all the values have been distributed into single atomic values</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/OverDeveloped/notes/pajhgmda120khu4vi6eumgh">Normalization (nibm)</a></li>
+<li><a href="/OverDeveloped/notes/f1zwovuh9im3dxhfws0mh6j">2nf Second Normal Form (nibm)</a></li>
+<li><a href="/OverDeveloped/notes/u0tckorg6m3tdccwwvww6we">3nf Third Normal Form (nibm)</a></li>
+</ul>

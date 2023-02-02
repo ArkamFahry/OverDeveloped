@@ -1,0 +1,99 @@
+<h1 id="dcl">Dcl<a aria-hidden="true" class="anchor-heading icon-link" href="#dcl"></a></h1>
+<h2 id="dcl-means-data-control-language">DCL means Data Control Language<a aria-hidden="true" class="anchor-heading icon-link" href="#dcl-means-data-control-language"></a></h2>
+<p>DCL includes commands such as GRANT and REVOKE which mainly deal with the rights, permissions, and other controls of the database system</p>
+<p>EX:</p>
+<ul>
+<li>GRANT - this command gives users access privileges to the database</li>
+<li>REVOKE - this command withdraws the user’s access privileges given by using the GRANT command</li>
+</ul>
+<h2 id="dcl-sql">Dcl SQL<a aria-hidden="true" class="anchor-heading icon-link" href="#dcl-sql"></a></h2>
+<ul>
+<li>
+<h3 id="creating-logins">Creating Logins<a aria-hidden="true" class="anchor-heading icon-link" href="#creating-logins"></a></h3>
+</li>
+<li>
+<p>Create Login</p>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> LOGIN login_name <span class="token keyword">WITH</span> PASSWORD <span class="token operator">=</span> password<span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>Select All Logins On Database</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span>
+  sp<span class="token punctuation">.</span>name <span class="token keyword">AS</span> login<span class="token punctuation">,</span>
+  sp<span class="token punctuation">.</span>type_desc <span class="token keyword">AS</span> login_type<span class="token punctuation">,</span>
+  <span class="token keyword">CASE</span>
+    <span class="token keyword">WHEN</span> sp<span class="token punctuation">.</span>is_disabled <span class="token operator">=</span> <span class="token number">1</span> <span class="token keyword">THEN</span> <span class="token string">'Disabled'</span>
+    <span class="token keyword">ELSE</span> <span class="token string">'Enabled'</span>
+  <span class="token keyword">END</span> <span class="token keyword">AS</span> <span class="token keyword">status</span><span class="token punctuation">,</span>
+  sl<span class="token punctuation">.</span>password_hash<span class="token punctuation">,</span>
+  sp<span class="token punctuation">.</span>create_date<span class="token punctuation">,</span>
+  sp<span class="token punctuation">.</span>modify_date
+<span class="token keyword">FROM</span> sys<span class="token punctuation">.</span>server_principals sp
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> sys<span class="token punctuation">.</span>sql_logins sl
+  <span class="token keyword">ON</span> sp<span class="token punctuation">.</span>principal_id <span class="token operator">=</span> sl<span class="token punctuation">.</span>principal_id
+<span class="token keyword">WHERE</span> sp<span class="token punctuation">.</span><span class="token keyword">type</span> <span class="token operator">NOT</span> <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token string">'G'</span><span class="token punctuation">,</span> <span class="token string">'R'</span><span class="token punctuation">)</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> create_date <span class="token keyword">DESC</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>
+<h3 id="creating-users">Creating Users<a aria-hidden="true" class="anchor-heading icon-link" href="#creating-users"></a></h3>
+</li>
+<li>
+<p>Create User</p>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">USER</span> user_name <span class="token keyword">FOR</span> LOGIN login_name<span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>Create User With Default Schema</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">USER</span> user_name <span class="token keyword">FOR</span> LOGIN login_name <span class="token keyword">WITH</span> DEFAULT_SCHEMA <span class="token operator">=</span> schema_name<span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>
+<h3 id="grant-privileges">Grant Privileges<a aria-hidden="true" class="anchor-heading icon-link" href="#grant-privileges"></a></h3>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">GRANT</span> operations <span class="token keyword">ON</span> entity<span class="token punctuation">(</span>object<span class="token operator">/</span><span class="token keyword">table</span><span class="token punctuation">)</span> <span class="token keyword">TO</span> <span class="token keyword">user</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>
+<h3 id="revoke-privileges">Revoke Privileges<a aria-hidden="true" class="anchor-heading icon-link" href="#revoke-privileges"></a></h3>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">REVOKE</span> operations <span class="token keyword">ON</span> entity<span class="token punctuation">(</span>object<span class="token operator">/</span><span class="token keyword">table</span><span class="token punctuation">)</span> <span class="token keyword">FROM</span> <span class="token keyword">user</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>
+<h3 id="operations">Operations<a aria-hidden="true" class="anchor-heading icon-link" href="#operations"></a></h3>
+<ul>
+<li>SELECT
+<ul>
+<li>basic select operation</li>
+</ul>
+</li>
+<li>INSERT
+<ul>
+<li>basic insert operation</li>
+</ul>
+</li>
+<li>UPDATE
+<ul>
+<li>basic update operation</li>
+</ul>
+</li>
+<li>DELETE
+<ul>
+<li>basic delete operation</li>
+</ul>
+</li>
+<li>CONTROL
+<ul>
+<li>all of the above operation that means SELECT, INSERT, UPDATE, DELETE basically access for all database operations</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>

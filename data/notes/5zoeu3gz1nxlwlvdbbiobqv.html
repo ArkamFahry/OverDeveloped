@@ -1,0 +1,66 @@
+<h1 id="docker-file">Docker File<a aria-hidden="true" class="anchor-heading icon-link" href="#docker-file"></a></h1>
+<p> A <strong>docker file</strong> is  a text document that contains all the commands a user could call on the command line to assemble an docker image. Using docker build users can create an automated build that executes the command's described in the <strong>docker file</strong> in succession to create a docker image.</p>
+<h4 id="example-docker-files">Example docker files<a aria-hidden="true" class="anchor-heading icon-link" href="#example-docker-files"></a></h4>
+<ul>
+<li>
+<h4 id="a-docker-file">A docker file<a aria-hidden="true" class="anchor-heading icon-link" href="#a-docker-file"></a></h4>
+</li>
+</ul>
+<pre class="language-docker"><code class="language-Docker"><span class="token comment"># The base image</span>
+<span class="token instruction"><span class="token keyword">FROM</span> node:lts-alpine3.16</span>
+
+<span class="token comment"># Create a directory for the app</span>
+<span class="token instruction"><span class="token keyword">RUN</span> mkdir -p usr/src/app</span>
+
+<span class="token comment"># Copies all the files </span>
+<span class="token instruction"><span class="token keyword">COPY</span> . .</span>
+
+<span class="token comment"># Install app dependencies</span>
+<span class="token comment"># The order matters for dependencie caching</span>
+<span class="token instruction"><span class="token keyword">RUN</span> npm install</span>
+
+<span class="token comment"># Exposeses internal port 3000 in the docker contianer</span>
+<span class="token instruction"><span class="token keyword">EXPOSE</span> 3000</span>
+
+<span class="token comment"># The command which runs when the docker container starts</span>
+<span class="token instruction"><span class="token keyword">CMD</span> [ <span class="token string">"npm"</span>, <span class="token string">"run"</span>, <span class="token string">"start"</span> ]</span>
+</code></pre>
+<ul>
+<li>
+<h4 id="a-multi-stage-docker-file">A multi stage docker file<a aria-hidden="true" class="anchor-heading icon-link" href="#a-multi-stage-docker-file"></a></h4>
+</li>
+</ul>
+<pre class="language-docker"><code class="language-Docker"><span class="token comment"># The base image for the docker image build</span>
+<span class="token instruction"><span class="token keyword">FROM</span> node:lts-alpine3.16 <span class="token keyword">AS</span> builder</span>
+
+<span class="token comment"># Create app directory</span>
+<span class="token instruction"><span class="token keyword">WORKDIR</span> /app</span>
+
+<span class="token comment"># A wildcard is used to ensure both package.json AND package-lock.json are copied</span>
+<span class="token instruction"><span class="token keyword">COPY</span> package*.json ./</span>
+<span class="token instruction"><span class="token keyword">COPY</span> prisma ./prisma/</span>
+
+<span class="token comment"># Install app dependencies</span>
+<span class="token comment"># The order matters for dependencie caching</span>
+<span class="token instruction"><span class="token keyword">RUN</span> npm install</span>
+
+<span class="token comment"># Copies all the files </span>
+<span class="token instruction"><span class="token keyword">COPY</span> . .</span>
+
+<span class="token comment"># Builds the application</span>
+<span class="token instruction"><span class="token keyword">RUN</span> npm run build</span>
+
+<span class="token comment"># The docker image runner image</span>
+<span class="token instruction"><span class="token keyword">FROM</span> node:lts-alpine3.16</span>
+
+<span class="token comment"># copies all the files from the builder the runner</span>
+<span class="token instruction"><span class="token keyword">COPY</span> <span class="token options"><span class="token property">--from</span><span class="token punctuation">=</span><span class="token string">builder</span></span> /app/node_modules ./node_modules</span>
+<span class="token instruction"><span class="token keyword">COPY</span> <span class="token options"><span class="token property">--from</span><span class="token punctuation">=</span><span class="token string">builder</span></span> /app/package*.json ./</span>
+<span class="token instruction"><span class="token keyword">COPY</span> <span class="token options"><span class="token property">--from</span><span class="token punctuation">=</span><span class="token string">builder</span></span> /app/dist ./dist</span>
+
+<span class="token comment"># Exposeses internal port 3000 in the docker contianer</span>
+<span class="token instruction"><span class="token keyword">EXPOSE</span> 3000</span>
+
+<span class="token comment"># The command which runs when the docker container starts</span>
+<span class="token instruction"><span class="token keyword">CMD</span> [ <span class="token string">"npm"</span>, <span class="token string">"run"</span>, <span class="token string">"start:prod"</span> ]</span>
+</code></pre>

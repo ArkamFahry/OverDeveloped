@@ -1,0 +1,160 @@
+<h1 id="transitive-dependency">Transitive Dependency<a aria-hidden="true" class="anchor-heading icon-link" href="#transitive-dependency"></a></h1>
+<p>When an indirect relationship causes functional dependency it is called Transitive Dependency.</p>
+<p>If  <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>−</mo><mo>></mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P -> Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>−</mo><mo>></mo><mi>R</mi></mrow><annotation encoding="application/x-tex">Q -> R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span></span> is true, then <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>−</mo><mo>></mo><mi>R</mi></mrow><annotation encoding="application/x-tex">P -> R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span></span> is a transitive dependency.</p>
+<blockquote>
+<p>💫 Short Note</p>
+<p>A dependent is indirectly dependent on determinant in Transitive functional dependency</p>
+</blockquote>
+<p>Consider a relation <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false">(</mo><mi>X</mi><mi>Y</mi><mi>Z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">R(XYZ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mclose">)</span></span></span></span></span>, where <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span></span>,<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi></mrow><annotation encoding="application/x-tex">Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span></span></span></span></span> are the attributes of the relation
+R. A Transitive dependency exists when you have the following functional dependency pattern,
+<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X→Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>→</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">Y→Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span></span></span></span></span>; therefore, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">X→Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span></span></span></span></span>. In other words, a functional dependency is said to be transitive if it is indirectly formed by two <a href="/OverDeveloped/notes/9i1milmr4y0eb1u3t3tl63w">functional dependencies</a>.</p>
+<p>EX:</p>
+<p>Game Studio</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Studio_ID</th><th>Studio_Name</th><th>Game</th><th>Head_Quartes</th></tr></thead><tbody><tr><td>G1</td><td>Ubisoft</td><td>Rainbow Six Seige</td><td>France</td></tr><tr><td>G2</td><td>Active Vision</td><td>Call Of Duty</td><td>USA</td></tr><tr><td>G3</td><td>Sucker Punch</td><td>Ghost of Tsushima</td><td>USA</td></tr></tbody></table></div>
+<ul>
+<li>In the above game studio table
+<ul>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>−</mo><mo>></mo><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Game -> Studio\_Name</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">G</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span></span></span></span></span> : the Game attributes determine  Studio_Name</li>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>−</mo><mo>></mo><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Studio\_Name -> Head\_Quartes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span></span></span></span></span> : if we know the Studio_Name then we can determine Head_Quartes</li>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>−</mo><mo>></mo><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Game -> Head\_Quartes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">G</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span></span></span></span></span> : If we know the Game, we can determine the Head_Quartes via the Studio_Name column</li>
+</ul>
+</li>
+<li>If you take a closer look into the functional dependencies they are indeed forming a pattern
+<ul>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>−</mo><mo>></mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A -> B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>−</mo><mo>></mo><mi>C</mi></mrow><annotation encoding="application/x-tex">B -> C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></span> then <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>−</mo><mo>></mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A -> C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></span>.</li>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>−</mo><mo>></mo><mi>G</mi><mi>a</mi><mi>m</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">A -> Game</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span></span></span></span></span>, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>−</mo><mo>></mo><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">B -> Studio\_Name</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>−</mo><mo>></mo><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">C -> Head\_Quartes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span></span></span></span></span>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="lets-remove-the-above-transitive-dependency">Lets remove the above transitive dependency<a aria-hidden="true" class="anchor-heading icon-link" href="#lets-remove-the-above-transitive-dependency"></a></h3>
+<ul>
+<li>To remove the above transitive dependency first lets consider the above table with three attributes (Studio_ID, Studio_Name, Head_Quartes)</li>
+</ul>
+<p>Game Studio</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Studio_ID</th><th>Studio_Name</th><th>Head_Quartes</th></tr></thead><tbody><tr><td>G1</td><td>Ubisoft</td><td>France</td></tr><tr><td>G2</td><td>Active Vision</td><td>USA</td></tr><tr><td>G3</td><td>Sucker Punch</td><td>USA</td></tr></tbody></table></div>
+<ul>
+<li>
+<p>The above Game Studio table is not in 3NF because it has the Transitive dependency. Let's see what is it</p>
+<ul>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>I</mi><mi>D</mi><mo>−</mo><mo>></mo><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Studio\_ID -> Studio\_Name</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span></span></span></span></span></li>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo>−</mo><mo>></mo><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Studio\_Name -> Head\_Quartes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span></span></span></span></span></li>
+</ul>
+</li>
+<li>
+<p>There for the following dependency exists</p>
+<ul>
+<li><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>I</mi><mi>D</mi><mo>−</mo><mo>></mo><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Studio\_ID -> Head\_Quartes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord">−</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0044em;vertical-align:-0.31em;"></span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span></span></span></span></span></li>
+</ul>
+</li>
+</ul>
+<p>Lets split the above table into to two tables</p>
+<ul>
+<li>First table - <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>a</mi><mi>m</mi><mi>e</mi><mi mathvariant="normal">_</mi><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mo stretchy="false">(</mo><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>I</mi><mi>D</mi><mo separator="true">,</mo><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Game\_Studio (Studio\_ID, Studio\_Name)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06em;vertical-align:-0.31em;"></span><span class="mord mathnormal">G</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mopen">(</span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mclose">)</span></span></span></span></span></li>
+<li>Second table - <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi><mo stretchy="false">(</mo><mi>S</mi><mi>t</mi><mi>u</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi mathvariant="normal">_</mi><mi>N</mi><mi>a</mi><mi>m</mi><mi>e</mi><mo separator="true">,</mo><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi><mi mathvariant="normal">_</mi><mi>Q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>s</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Studio\_Head\_Quartes (Studio\_Name, Head\_Quartes)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06em;vertical-align:-0.31em;"></span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span><span class="mopen">(</span><span class="mord mathnormal">St</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord mathnormal">am</span><span class="mord mathnormal">e</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">He</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">t</span><span class="mord mathnormal">es</span><span class="mclose">)</span></span></span></span></span></li>
+</ul>
+<p>Game Studio table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Studio_ID</th><th>Studio_Name</th></tr></thead><tbody><tr><td>G1</td><td>Ubisoft</td></tr><tr><td>G2</td><td>Active Vision</td></tr><tr><td>G3</td><td>Sucker Punch</td></tr></tbody></table></div>
+<p>Studio Head Quartes table</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Studio_Name</th><th>Head_Quartes</th></tr></thead><tbody><tr><td>Ubisoft</td><td>France</td></tr><tr><td>Active Vision</td><td>USA</td></tr><tr><td>Sucker Punch</td><td>USA</td></tr></tbody></table></div>
+<p>Now the new Game Studio table and Studio Head Quartes table contains no Transitive dependency and the relation is now in 3NF</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/OverDeveloped/notes/u0tckorg6m3tdccwwvww6we">3nf Third Normal Form (nibm)</a></li>
+</ul>

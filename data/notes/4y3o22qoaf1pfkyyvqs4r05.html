@@ -1,0 +1,55 @@
+<h1 id="integrity-constraints">Integrity Constraints<a aria-hidden="true" class="anchor-heading icon-link" href="#integrity-constraints"></a></h1>
+<h2 id="mainly-constraints-on-the-relational-database-are-of-4-types">Mainly Constraints on the relational database are of 4 types<a aria-hidden="true" class="anchor-heading icon-link" href="#mainly-constraints-on-the-relational-database-are-of-4-types"></a></h2>
+<ol>
+<li><a href="/OverDeveloped/notes/4y3o22qoaf1pfkyyvqs4r05#1-domain-constraints">Domain constraints</a></li>
+<li><a href="/OverDeveloped/notes/4y3o22qoaf1pfkyyvqs4r05#2-key-constraints-uniqueness-constraints">Key constraints</a></li>
+<li><a href="/OverDeveloped/notes/4y3o22qoaf1pfkyyvqs4r05#3-entity-integrity-constraints">Entity Integrity constraints</a></li>
+<li><a href="/OverDeveloped/notes/4y3o22qoaf1pfkyyvqs4r05#4-referential-integrity-constraints">Referential integrity constraints</a></li>
+</ol>
+<h3 id="1-domain-constraints">1. Domain constraints<a aria-hidden="true" class="anchor-heading icon-link" href="#1-domain-constraints"></a></h3>
+<ul>
+<li>Every domain must contain atomic values(smallest indivisible units) it means composite and multi-valued attributes are not allowed</li>
+<li>We perform datatype check here, which means when we assign a data type to a column we limit the values that it can contain</li>
+</ul>
+<p>Ex:</p>
+<ul>
+<li>
+<p>If we assign the datatype of attribute age as int, we can't give it any values other then int datatype</p>
+</li>
+<li>
+<p>If we assign the datatype of attribute name as char, we can't give it any values other then char datatype</p>
+</li>
+</ul>
+<h3 id="2-key-constraints-uniqueness-constraints">2. key constraints (Uniqueness Constraints)<a aria-hidden="true" class="anchor-heading icon-link" href="#2-key-constraints-uniqueness-constraints"></a></h3>
+<ul>
+<li>
+<p>Tuple in the relation should be unique</p>
+</li>
+<li>
+<p>A relation can have multiple keys or candidate keys(minimal super key), out of which we choose one of the keys as primary key. we have to use the candidate key with less number of attributes.</p>
+</li>
+<li>
+<p>NULL values are not allowed in the primary key</p>
+</li>
+</ul>
+<h3 id="3-entity-integrity-constraints">3. Entity Integrity Constraints<a aria-hidden="true" class="anchor-heading icon-link" href="#3-entity-integrity-constraints"></a></h3>
+<ul>
+<li>No primary key can be NULL value, since we use the primary key to identify tuples uniquely</li>
+</ul>
+<h3 id="4-referential-integrity-constraints">4. Referential Integrity Constraints<a aria-hidden="true" class="anchor-heading icon-link" href="#4-referential-integrity-constraints"></a></h3>
+<ul>
+<li>
+<p>This type of constraints is specified between two relations or tables and used to maintain the consistency among the tuples in two relations</p>
+</li>
+<li>
+<p>This constraint is enforced through foreign key, when an attribute in the foreign key of relation <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">R1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">1</span></span></span></span></span> have the same domains as the primary key of relation <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">R2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">2</span></span></span></span></span>, then the foreign key of <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">R1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">1</span></span></span></span></span> is said to reference or refer to the primary key of relation <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">R2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">2</span></span></span></span></span></p>
+</li>
+<li>
+<p>The values of the foreign key in a tuple of relation <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">R1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">1</span></span></span></span></span> can either take the values of the primary key for some tuple in relation <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">R2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">2</span></span></span></span></span>, or can take NULL values, but can’t be empty (in simple term if NOT NULL is not specified it can be NULL)</p>
+</li>
+</ul>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/OverDeveloped/notes/4y3o22qoaf1pfkyyvqs4r05">Integrity Constraints (nibm)</a></li>
+</ul>

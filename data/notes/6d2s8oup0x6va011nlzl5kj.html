@@ -1,0 +1,10 @@
+<h1 id="not-in-operator">Not in Operator<a aria-hidden="true" class="anchor-heading icon-link" href="#not-in-operator"></a></h1>
+<p>NOT IN lets you compare multiple values like <a href="/OverDeveloped/notes/tjfocydbokczznvdpyc1r0k">IN</a> but NOT LIKE return the values which doesn't match the given criteria</p>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">WHERE</span> <span class="token keyword">column</span> <span class="token operator">NOT</span> <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token keyword">values</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>ℹ️ Info</p>
+<p>needs to be run on the same column. cant be run on multiple columns.</p>
+</blockquote>

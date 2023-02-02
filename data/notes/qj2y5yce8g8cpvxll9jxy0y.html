@@ -1,0 +1,13 @@
+<h1 id="nested-query">Nested Query<a aria-hidden="true" class="anchor-heading icon-link" href="#nested-query"></a></h1>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token keyword">FROM</span> table_name
+<span class="token keyword">WHERE</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> operator <span class="token punctuation">(</span>
+    <span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token keyword">FROM</span> table_name
+    <span class="token keyword">WHERE</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>⚠️ Note</p>
+<p>Sub query needs to be in the right hand side of the operation</p>
+</blockquote>

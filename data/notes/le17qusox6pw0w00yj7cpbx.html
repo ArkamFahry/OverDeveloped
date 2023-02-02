@@ -1,0 +1,61 @@
+<h1 id="create-table">Create Table<a aria-hidden="true" class="anchor-heading icon-link" href="#create-table"></a></h1>
+<h2 id="create-table-1">Create table<a aria-hidden="true" class="anchor-heading icon-link" href="#create-table-1"></a></h2>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> table_name <span class="token punctuation">(</span>
+    Column_name Data_type <span class="token keyword">Constraint</span> <span class="token operator">and</span> <span class="token keyword">Check</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Ex:</p>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Student <span class="token punctuation">(</span>
+    Id <span class="token keyword">INT</span> <span class="token keyword">IDENTITY</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Email <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Password <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    Gender <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'male'</span><span class="token punctuation">,</span>
+    Address <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> user_pk <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>Id<span class="token punctuation">)</span> 
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>⚠️ Note</p>
+<ul>
+<li>IDENTITY is used to represent an auto increment Id</li>
+<li>DEFAULT is used represent a default value in INSERT if its Not Defined or NULL</li>
+</ul>
+</blockquote>
+<h3 id="ways-of-defining-primary-key">Ways of defining primary key<a aria-hidden="true" class="anchor-heading icon-link" href="#ways-of-defining-primary-key"></a></h3>
+<ul>
+<li>First method - Inline primary key definement</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Student <span class="token punctuation">(</span>
+    Id <span class="token keyword">INT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>    
+</code></pre>
+<ul>
+<li>Second method - Defining at the end</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Student <span class="token punctuation">(</span>
+    Id <span class="token keyword">INT</span> <span class="token keyword">IDENTITY</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>Id<span class="token punctuation">)</span> 
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>Third method - Defining at th end with a primary key name</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> Student <span class="token punctuation">(</span>
+    Id <span class="token keyword">INT</span> <span class="token keyword">IDENTITY</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Name <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword">CONSTRAINT</span> user_pk <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>Id<span class="token punctuation">)</span> 
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>As shown above primary key has a name user_pk so this can be used to manage the primary key by its name.</p>
+<p>Ex:</p>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> Student <span class="token keyword">DROP</span> <span class="token keyword">CONSTRAINT</span> user_pk<span class="token punctuation">;</span>
+</code></pre>
+<p>As shown above the primary key constraint can be dropped using its defined constraint name.</p>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/OverDeveloped/notes/e8hd1ufofnz84n6xd0k7c8j">Ddl (nibm)</a></li>
+</ul>

@@ -1,0 +1,22 @@
+<h1 id="group-by">Group By<a aria-hidden="true" class="anchor-heading icon-link" href="#group-by"></a></h1>
+<ul>
+<li>
+<p>The GROUP BY statement groups rows that have the same values into summary rows.</p>
+</li>
+<li>
+<p>The GROUP BY statement is often used with aggregate functions ( COUNT(), MAX(), MIN(), SUM(), AVG() ) to group the result-set by one or more columns.</p>
+</li>
+<li>
+<p>Produce one tuple for every group by applying aggregation  </p>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token keyword">FROM</span> table_name
+<span class="token keyword">WHERE</span> condition
+<span class="token keyword">GROUP</span> <span class="token keyword">BY</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>⚠️ Note</p>
+<p>WHERE clause can`t be used after aggregate function GROUP BY we need to use <a href="/OverDeveloped/notes/mxof8qzau5uhbtbhgcu4mb3">HAVING</a> clause</p>
+</blockquote>

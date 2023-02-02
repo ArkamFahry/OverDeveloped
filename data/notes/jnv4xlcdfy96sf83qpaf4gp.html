@@ -1,0 +1,301 @@
+<h1 id="java">Java<a aria-hidden="true" class="anchor-heading icon-link" href="#java"></a></h1>
+<h4 id="install-java-jdk">Install Java JDK<a aria-hidden="true" class="anchor-heading icon-link" href="#install-java-jdk"></a></h4>
+<ul>
+<li>Side note need an oracle account</li>
+<li>Install java version 8 for stability</li>
+<li>Install java in the default location</li>
+<li>Install all the default development tools</li>
+<li>Set the environment variables for java and javac</li>
+</ul>
+<h4 id="facts-about-java">Facts about java<a aria-hidden="true" class="anchor-heading icon-link" href="#facts-about-java"></a></h4>
+<ul>
+<li>Java is a compiled and interpreted programing language which runs on more then 3 billion devices</li>
+<li>Java is used to build app for mobile application to enterprise scale server application</li>
+<li>Java is a statically typed language with garbage collection</li>
+<li>Java is also case sensitive</li>
+</ul>
+<h4 id="java-compiler-javac">Java compiler (Javac)<a aria-hidden="true" class="anchor-heading icon-link" href="#java-compiler-javac"></a></h4>
+<ul>
+<li>The Java compiler (javac) is the compiler which turns java source code into class files which contains  java bytecode which is run on the Java virtual machine (JVM)</li>
+</ul>
+<h4 id="java-virtual-machine-jvm">Java virtual machine (JVM)<a aria-hidden="true" class="anchor-heading icon-link" href="#java-virtual-machine-jvm"></a></h4>
+<ul>
+<li>Java virtual machine is used to execute the java byte code which are in java class files</li>
+<li>Java virtual machine is a abstract virtual machine that runs on top of the host OS.</li>
+</ul>
+<h4 id="java-data-types">Java data types<a aria-hidden="true" class="anchor-heading icon-link" href="#java-data-types"></a></h4>
+<ul>
+<li>Primitive data  types</li>
+</ul>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Type</th><th>Size</th></tr></thead><tbody><tr><td>byte</td><td>1 byte</td></tr><tr><td>short</td><td>2 bytes</td></tr><tr><td>int</td><td>4 bytes</td></tr><tr><td>long</td><td>8 bytes</td></tr><tr><td>float</td><td>4 bytes</td></tr><tr><td>double</td><td>8 bytes</td></tr><tr><td>boolean</td><td>1 bit</td></tr><tr><td>char</td><td>2 bytes</td></tr></tbody></table></div>
+<ul>
+<li>Non primitive data types
+<ul>
+<li>String</li>
+<li>Array</li>
+</ul>
+</li>
+</ul>
+<h4 id="compiling-and-running-java">Compiling and Running java<a aria-hidden="true" class="anchor-heading icon-link" href="#compiling-and-running-java"></a></h4>
+<ul>
+<li>
+<p>Create a java file with a name and ".java" file extension</p>
+<ul>
+<li>Ex -: main.java</li>
+</ul>
+</li>
+<li>
+<p>Write some java source code in it</p>
+</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> main <span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>
+<p>Then navigate to that files location using cmd (bash for OSX, Linux)</p>
+</li>
+<li>
+<p>Using the java compiler (javac) compile the java source file</p>
+</li>
+</ul>
+<pre class="language-pws"><code class="language-Pws">D:\Projects\Java> javac main.java
+</code></pre>
+<ul>
+<li>
+<p>Javac will compile the source code and output a class file</p>
+<ul>
+<li>Ex -: main.class</li>
+</ul>
+</li>
+<li>
+<p>Using the java virtual machine run the java class file which contains the java byte code</p>
+</li>
+</ul>
+<pre class="language-pws"><code class="language-Pws">D:\Projects\Java> java main // do not put the class extension it will throw an error
+</code></pre>
+<ul>
+<li>
+<p>The output will be "Hello World"</p>
+</li>
+<li>
+<p>After editing the source code always re-compile the source file before running it</p>
+</li>
+</ul>
+<h4 id="example-java-code">Example java code<a aria-hidden="true" class="anchor-heading icon-link" href="#example-java-code"></a></h4>
+<h5 id="input-and-output-in-java">Input and output in java<a aria-hidden="true" class="anchor-heading icon-link" href="#input-and-output-in-java"></a></h5>
+<ul>
+<li>Input and output in java</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">InputAndOutput</span> <span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">int</span> num1<span class="token punctuation">,</span> num2<span class="token punctuation">,</span> result<span class="token punctuation">;</span>
+
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Enter num 1 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  num1 <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">console</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Enter num 2 : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  num2 <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">console</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  result<span class="token operator">=</span>num1<span class="token operator">+</span>num2<span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Sum is = "</span> <span class="token operator">+</span> result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="selection-in-java">Selection in java<a aria-hidden="true" class="anchor-heading icon-link" href="#selection-in-java"></a></h5>
+<ul>
+<li>If else in java</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">IfElse</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+      
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Enter num : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    num <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">console</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">></span><span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Excellent"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">></span><span class="token number">80</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Good"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>num<span class="token operator">></span><span class="token number">60</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Average"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Fail"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Switch in java</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hello</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Enter num : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    num <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">console</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+    <span class="token keyword">switch</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">case</span> <span class="token number">90</span><span class="token operator">:</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"A"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> <span class="token number">70</span><span class="token operator">:</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"B"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">default</span><span class="token operator">:</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"C"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Condition operator  (Ternary operator)</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hello</span> <span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Enter num : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  num <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">console</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">readLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+  <span class="token class-name">String</span> msg <span class="token operator">=</span> num <span class="token operator">></span> <span class="token number">10</span> <span class="token operator">?</span> <span class="token string">"Greater than 10"</span> <span class="token operator">:</span> <span class="token string">"Less than 10"</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="casting-values-in-java">Casting values in java<a aria-hidden="true" class="anchor-heading icon-link" href="#casting-values-in-java"></a></h5>
+<ul>
+<li>Casting higher value to lower value</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CastHigherToLower</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">float</span> a <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b<span class="token punctuation">;</span>
+    b<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>a<span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CastHigherToLower</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">byte</span> a<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> b <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    a<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">byte</span><span class="token punctuation">)</span>b<span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Cast lower value to higher value</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CastLowerToHigher</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token keyword">float</span> b<span class="token punctuation">;</span>
+    b<span class="token operator">=</span>a<span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CastLowerToHigher</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">float</span> a <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> b<span class="token punctuation">;</span>
+    b<span class="token operator">=</span>a<span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="java-data-type-conversions">Java data type conversions<a aria-hidden="true" class="anchor-heading icon-link" href="#java-data-type-conversions"></a></h5>
+<ul>
+<li>String to int</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StringToInt</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span> value <span class="token operator">=</span> <span class="token string">"100"</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token class-name">Integer</span><span class="token punctuation">.</span><span class="token function">parseInt</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>String to Float</li>
+</ul>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StringToFloat</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token class-name">String</span> value <span class="token operator">=</span> <span class="token string">"100"</span><span class="token punctuation">;</span>
+    <span class="token keyword">float</span> x <span class="token operator">=</span> <span class="token class-name">Float</span><span class="token punctuation">.</span><span class="token function">parseFloat</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>
+<p>String to Double</p>
+<pre class="language-java"><code class="language-Java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">StringToDouble</span> <span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token class-name">String</span> value <span class="token operator">=</span> <span class="token string">"100"</span><span class="token punctuation">;</span>
+   <span class="token keyword">double</span> x <span class="token operator">=</span> <span class="token class-name">Double</span><span class="token punctuation">.</span><span class="token function">parseDouble</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<pre><code>
+- Parse to String
+
+```Java
+public class ParseToString {
+ public static void main(String args[]) {
+  int value = 100;
+  String x = String.valueOf(value);
+  System.out.println(x);
+ }
+}
+</code></pre>

@@ -1,0 +1,35 @@
+<h1 id="alter-table">Alter Table<a aria-hidden="true" class="anchor-heading icon-link" href="#alter-table"></a></h1>
+<h2 id="alter-tables-in-the-database">Alter tables in the database<a aria-hidden="true" class="anchor-heading icon-link" href="#alter-tables-in-the-database"></a></h2>
+<ul>
+<li>adding a column to a table</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name 
+<span class="token keyword">ADD</span> column_name data_type <span class="token keyword">constraint</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>altering the column constraint to not null</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name 
+<span class="token keyword">ALTER</span> <span class="token keyword">COLUMN</span> column_name data_type <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>altering adding primary key</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name 
+<span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> key_name <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>attribute<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>⚠️ Note</p>
+<p>If the column can nullable need to alter it to be not null before adding primary key alteration</p>
+</blockquote>
+<ul>
+<li>altering and adding foreign key</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> table_name 
+<span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> foreign_key_name 
+<span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>attribute<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> referenced_table<span class="token punctuation">(</span>attribute<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>⚠️ Note</p>
+<p>If there is no column to create a foreign key on we need to add a column</p>
+</blockquote>

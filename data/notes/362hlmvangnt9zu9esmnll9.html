@@ -1,0 +1,55 @@
+<h1 id="docker-compose">Docker Compose<a aria-hidden="true" class="anchor-heading icon-link" href="#docker-compose"></a></h1>
+<p><strong>Docker compose</strong> is used to run multiple docker containers at once</p>
+<h2 id="networking">Networking<a aria-hidden="true" class="anchor-heading icon-link" href="#networking"></a></h2>
+<p>By default Docker-Compose will create a new network for the given compose file. You can change the behavior by defining custom networks in your compose file.</p>
+<h3 id="create-and-assign-custom-network">Create and assign custom network<a aria-hidden="true" class="anchor-heading icon-link" href="#create-and-assign-custom-network"></a></h3>
+<p><em>Example:</em></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">networks</span><span class="token punctuation">:</span>
+  <span class="token key atrule">custom-network</span><span class="token punctuation">:</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">networks</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> custom<span class="token punctuation">-</span>network
+</code></pre>
+<h3 id="use-existing-networks">Use existing networks<a aria-hidden="true" class="anchor-heading icon-link" href="#use-existing-networks"></a></h3>
+<p>If you want to use an existing Docker network for your compose files, you can add the <code>external: true</code> parameter in your compose file
+<em>Example:</em></p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">networks</span><span class="token punctuation">:</span>
+  <span class="token key atrule">existing-network</span><span class="token punctuation">:</span>
+    <span class="token key atrule">external</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre>
+<h2 id="volumes">Volumes<a aria-hidden="true" class="anchor-heading icon-link" href="#volumes"></a></h2>
+<p>Volumes allow Docker containers to use persistent storage. In a compose file, you can create and map volumes like this:</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+  <span class="token key atrule">my-volume</span><span class="token punctuation">:</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">app</span><span class="token punctuation">:</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> my<span class="token punctuation">-</span>volume<span class="token punctuation">:</span>/path<span class="token punctuation">-</span>in<span class="token punctuation">-</span>container
+</code></pre>
+<p>These volumes are stored in <code>/var/lib/docker/volumes</code>.</p>
+<h2 id="commands">Commands<a aria-hidden="true" class="anchor-heading icon-link" href="#commands"></a></h2>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>COMMAND</th><th>DESCRIPTION</th></tr></thead><tbody><tr><td><code>docker compose up -d</code></td><td>Start a new container stack</td></tr><tr><td><code>docker compose down</code></td><td>Stops the container stack</td></tr><tr><td><code>docker compose down --remove-orphans</code></td><td>Stops the container stack and Remove containers for services not defined in the Compose file</td></tr></tbody></table></div>

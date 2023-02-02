@@ -1,0 +1,44 @@
+<h1 id="like-operator">Like Operator<a aria-hidden="true" class="anchor-heading icon-link" href="#like-operator"></a></h1>
+<p>LIKE is a string comparison operator</p>
+<ul>
+<li>
+<p>'%' :- replaces arbitrary number of characters</p>
+</li>
+<li>
+<p>Select by the starting letter</p>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">WHERE</span> column_name <span class="token operator">LIKE</span> <span class="token string">'letter%'</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>Select by the ending letter</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">WHERE</span> column_name <span class="token operator">LIKE</span> <span class="token string">'%letter'</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>Select by letter any where middle of the value</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">WHERE</span> column_name <span class="token operator">LIKE</span> <span class="token string">'%letter%'</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>
+<p>'_' :- replaces single characters</p>
+</li>
+<li>
+<p>Select by a single letter match</p>
+</li>
+</ul>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">WHERE</span> column_name <span class="token operator">LIKE</span> <span class="token string">'_letter%'</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class="language-sql"><code class="language-Sql"><span class="token keyword">SELECT</span> <span class="token keyword">columns</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> 
+<span class="token keyword">FROM</span> table_name 
+<span class="token keyword">WHERE</span> column_name <span class="token operator">LIKE</span> <span class="token string">'__letter%'</span><span class="token punctuation">;</span>
+</code></pre>
