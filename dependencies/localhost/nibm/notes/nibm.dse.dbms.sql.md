@@ -2,7 +2,7 @@
 id: pqyhllxmon3ccio6zl6o6ud
 title: SQL
 desc: ''
-updated: 1673872985379
+updated: 1675345994664
 created: 1673839153207
 ---
 
